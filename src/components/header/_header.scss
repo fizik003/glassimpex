@@ -1,0 +1,83 @@
+header {
+  background-color: #f8fafb;
+}
+
+.logo {
+  background-image: url("/src/img/header/logo_color.svg");
+  width: 119.97px;
+  height: 39.93px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 107px;
+  padding-right: 90px;
+  align-items: center;
+}
+
+.navigation {
+  /* width: 300px; */
+}
+
+.nav-list {
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 500px; */
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item a:hover {
+  color: #00a8ff;
+}
+
+.nav-item-link {
+  padding: 29px 31px 26px;
+  display: block;
+  font-size: 14px;
+}
+
+.sec-nav-list {
+  position: absolute;
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 171px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 24px 30px;
+  background-color: #f8fafb;
+}
+
+.sec-nav-item {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.nav-item:hover > .sec-nav-list {
+  display: block;
+}
+.choice-lang {
+  height: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  width: 34px;
+  background: url("/src/img/header/Triangle.png") no-repeat right white;
+  -webkit-appearance: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding-top: 2px;
+  background-color: #f8fafb;
+}

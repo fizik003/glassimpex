@@ -1,0 +1,80 @@
+.main-section{
+  background-color: #0B3142;
+}
+
+.who-we-wrapper{
+  padding-left: 107px;
+  padding-right: 89px;
+  color: #FFFFFF;
+}
+
+.who-we{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.who-we-definition > h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 52px;
+  max-width: 352px;
+  margin-top: 104px;
+  margin-bottom: 17px;
+  
+}
+
+.who-we-definition-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 376px;
+  margin-bottom: 34px;
+}
+
+.who-we-connect-btn{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  background: #00A8FF;
+  border-radius: 3px;
+  padding: 10px 19px 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.who-we-connect-btn:hover{
+  background-color: #0094E0;
+}
+
+.who-we-defenition-img{
+  background-image: url('/src/img/main-section/viktor-jakovlev-H0vuplqoX0c-unsplash\ 1.png');
+  width: 671px;
+  height: 461px;
+  background-size: cover;
+}
+
+.who-we-list-links{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 39px;
+}
+
+.who-we-link{
+  display: flex;
+  align-items: center;
+}
+
+.who-we-text-link{
+  color:#FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-decoration-line: underline;
+  margin-left: 10.2px;
+}

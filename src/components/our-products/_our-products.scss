@@ -1,0 +1,72 @@
+.our-products{
+  background-color: #0B3142;
+}
+
+.our-products-wrapper{
+  padding-left: 103px;
+  padding-right: 59px;
+}
+
+.layout-2-columns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-description{
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.item-description-text{
+  padding-top: 15px;
+  width: 379px;
+  margin-bottom: 50px;
+}
+
+.our-product-item{
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.our-product-item-img{
+  width: 500px;
+  height: 550px;
+}
+
+.our-product-item-text{
+  max-width: 300px;
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  background-color: #0B3142;
+  padding: 24px 33.5px 56px 30px;
+  box-sizing: border-box;
+}
+
+.our-product-item-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00A8FF;
+  text-decoration: none;
+}
+
+.our-product-item-link:hover{
+  color: #0094E0;
+}
+
+
+.triangle{
+  width: 4px;
+  background-image: url('../../img/our-products/Triangle.png');
+  display: inline-block;
+  height: 7px;
+  margin-right: 3px;
+}
+
+.our-product-item-link:hover + .triangle{
+  background-image: url('../../img/our-products/Triangle_hover.png');
+}
+
+

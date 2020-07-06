@@ -1,0 +1,47 @@
+.team{
+  background-color: #F8FAFB;
+}
+.team-wrapper{
+  padding-left: 103px;
+  padding-right: 59px;
+}
+
+.team-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-descriptipn{
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  width: 450px;
+  text-align: center;
+}
+
+
+.layout-4-columns{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+
+.worker-photo{
+  width: 270px;
+  height: 310px;
+}
+
+.worker-position{
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.45;
+}
+
+.worker-contact{
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}

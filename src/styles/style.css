@@ -1,200 +1,27 @@
+@import "../components/header/header.css";
+@import '../components/who-we/who-we.css';
+@import '../components/about-us/about-us.css';
+@import '../components/our-privilege/our-privilege.css';
+@import '../components/our-products/our-products.css';
+@import '../components/team/team.css';
+@import '../components/location/location.css';
+@import '../components/contacts/contacts.css';
 @font-face {
   font-family: HelveticaNeue; 
   src: url('/src/fonts/HelveticaNeueCyr-Light.ttf');
  }
-body{
+
+
+
+
+ body{
   font-family: 'Montserrat', sans-serif;
 }
-header{
-  background-color: #F8FAFB;
-}
+
 .container{
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.logo{
-  background-image: url('/src/img/header/logo_color.svg');
-  width: 119.97px;
-  height: 39.93px;
-}
-
-.header-wrapper{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 89px;
-  align-items: center;
-}
-
-.navigation{
-  /* width: 300px; */
-}
-
-.nav-list{
-  display: flex;
-  /* justify-content: space-between; */
-  /* width: 500px; */
-}
-
-.nav-item{
-  position: relative;
-}
-.nav-item a{
-  text-decoration: none;
-  color: black;
-}
-
-.nav-item a:hover{
-  color: #00A8FF;
-}
-
-.nav-item-link{
-  padding: 29px 31px 26px;
-  display: block;
-  font-size: 14px
-}
-
-.sec-nav-list{
-  position: absolute;
-  display: none;
-  position: absolute;
-  left: 0;
-  width: 171px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 24px 30px;
-  background-color: #f8fafb;
-  
-}
-
-.sec-nav-item{
-  font-family: HelveticaNeue;
-  font-size: 14px;
-  line-height: 34px;
-  
-}
-
-.nav-item:hover > .sec-nav-list{
-  display: block;
-}
-.choice-lang{
-  height: 17px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  border: none;
-  width: 34px;
-  background: url('/src/img/header/Triangle.png') no-repeat right white;
-  -webkit-appearance: none;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  padding-top: 2px;
-  background-color: #f8fafb;
-}
-
-/* main  */
-/* who-we */
-.main-section{
-  background-color: #0B3142;
-}
-
-.who-we-wrapper{
-  padding-left: 108px;
-  padding-right: 89px;
-  color: #FFFFFF;
-}
-
-.who-we{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 38px;
-}
-
-.who-we-definition > h1{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 52px;
-  max-width: 352px;
-  margin-top: 104px;
-  margin-bottom: 17px;
-  
-}
-
-.who-we-definition-text{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  max-width: 376px;
-  margin-bottom: 34px;
-}
-
-.who-we-connect-btn{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 26px;
-  background: #00A8FF;
-  border-radius: 3px;
-  padding: 10px 19px 10px 20px;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.who-we-connect-btn:hover{
-  background-color: #0094E0;
-}
-
-.who-we-defenition-img{
-  background-image: url('/src/img/main-section/viktor-jakovlev-H0vuplqoX0c-unsplash\ 1.png');
-  width: 670px;
-  height: 461px;
-  background-size: cover;
-}
-
-.who-we-list-links{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 39px;
-}
-
-.who-we-link{
-  display: flex;
-  align-items: center;
-}
-
-.who-we-text-link{
-  color:#FFFFFF;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-  text-decoration-line: underline;
-  margin-left: 10.2px;
-}
-
-/* section-about-us */
-
-.about-us{
-  background-color: #F8FAFB;
-}
-
-.about-us-wrapper{
-  padding-top: 90px;
-  padding-left: 108px;
-  padding-right: 89px;
-}
-
-
-
-.about-us-text{
-  display: flex;
 }
 
 h2{
@@ -205,73 +32,15 @@ h2{
   display: block;
 }
 
-.about-us-title{
-  margin-right: 382px;
-}
-
-.about-us-descript{
-  max-width: 460px;
-  line-height: 22px;
-  color: #000000;
-  font-size: 14px;
-}
-
-.about-us-descript >p{
-  padding-top: 21px;
-}
-
-.about-us-img{
-  margin-top: 64px;
-}
-
-/* our-privilege */
-
-.our-privilege{
-  background-color: #F8FAFB;
-}
-
-.our-privilege-wrapper{
-  padding-top: 88px;
-  padding-left: 105px;
-  padding-right: 59px;
-}
-
-.our-privilege-title {
-  padding-bottom: 33px;
-}
-
-.layout-2-columns{
-  display: flex;
-  flex-wrap: wrap;
-  
-  
-}
-
-.layout-2-columns-item{
-  /* margin-right: 20px;
-  margin-bottom: 20px; */
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  margin-bottom: 38px;
-}
-
-
-
-.layout-2-columns-title{
-  display: flex;
-  align-items: center;
-}
-
-.layout-2-columns-marker {
-  width: 6px;
-  height: 6px;
-  background-color: #00A8FF;
-  /* display: flex; */
-  margin-right: 8px;
-  margin-left: 3px;
-}
-
 h3{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+
+}
+
+h4{
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
@@ -279,7 +48,7 @@ h3{
   align-items: center;
 }
 
-.layout-2-columns-text {
+.layout-3-columns-text {
   font-size: 14px;
   line-height: 22px;
   color: #2B2B2B;
@@ -289,4 +58,16 @@ h3{
   padding-left: 17px;
   padding-top: 7px;
 }
+
+p{
+  /* padding-bottom: 21px; */
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+/* our-products */
+
+
 
