@@ -1,25 +1,24 @@
-.our-privilege{
-  background-color: #F8FAFB;
+.our-privilege {
+  background-color: #f8fafb;
 }
 
-.our-privilege-wrapper{
+.our-privilege-wrapper {
   padding-top: 88px;
-  padding-left: 103px;
-  padding-right: 59px;
+  padding-left: 95px;
+  padding-right: 69px;
+  padding-bottom: 52px;
 }
 
 .our-privilege-title {
   padding-bottom: 33px;
 }
 
-.layout-3-columns{
+.layout-3-columns {
   display: flex;
   flex-wrap: wrap;
-  
-  
 }
 
-.layout-3-columns-item{
+.layout-3-columns-item {
   /* margin-right: 20px;
   margin-bottom: 20px; */
   flex: 0 0 33.333333%;
@@ -27,9 +26,7 @@
   margin-bottom: 38px;
 }
 
-
-
-.layout-3-columns-title{
+.layout-3-columns-title {
   display: flex;
   align-items: center;
 }
@@ -37,7 +34,7 @@
 .layout-3-columns-marker {
   width: 6px;
   height: 6px;
-  background-color: #00A8FF;
+  background-color: #00a8ff;
   /* display: flex; */
   margin-right: 8px;
   margin-left: 3px;

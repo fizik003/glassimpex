@@ -1,3 +1,25 @@
-.map-img{
+.location-wrapper {
+  display: flex;
+}
+
+.location-img {
+  height: 350px;
+  flex-basis: 40.5%;
+}
+
+.location-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.map-wrapper {
+  flex-basis: 59.5%;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
   height: 350px;
 }

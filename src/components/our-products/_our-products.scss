@@ -1,72 +1,102 @@
-.our-products{
-  background-color: #0B3142;
+.our-products {
+  background-color: #0b3142;
 }
 
-.our-products-wrapper{
-  padding-left: 103px;
-  padding-right: 59px;
+.our-products-wrapper {
+  padding-left: 99px;
+  padding-right: 97px;
+  padding-top: 90px;
+  padding-bottom: 92px;
 }
 
-.layout-2-columns{
+// .layout-2-columns {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+
+.item-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.item-description-text {
+  padding-top: 15px;
+  width: 379px;
+  margin-bottom: 191px;
+}
+
+.item-description-text p {
+  padding-top: 22px;
+}
+
+.row {
   display: flex;
   justify-content: space-between;
 }
 
-.item-description{
-  font-size: 14px;
-  line-height: 22px;
-  color: #FFFFFF;
+.margin-top-small {
+  margin-top: -101px;
+}
+.margin-top-big {
+  margin-top: -218px;
 }
 
-.item-description-text{
-  padding-top: 15px;
-  width: 379px;
-  margin-bottom: 50px;
+.flex-end {
+  justify-content: flex-end;
 }
 
-.our-product-item{
+.our-product-item {
   position: relative;
-  margin-bottom: 100px;
 }
 
-.our-product-item-img{
+// .our-product-item:last-child {
+//   margin-bottom: 91px;
+// }
+
+.our-product-item-img {
   width: 500px;
-  height: 550px;
+  height: 551px;
 }
 
-.our-product-item-text{
+.our-product-item-text {
   max-width: 300px;
   position: absolute;
   z-index: 99;
   bottom: 0;
-  background-color: #0B3142;
-  padding: 24px 33.5px 56px 30px;
+  background-color: #0b3142;
+  padding: 24px 33.5px 22px 30px;
   box-sizing: border-box;
+  left: -1px;
 }
 
-.our-product-item-link{
+.our-product-item-title {
+  margin-bottom: 9px;
+}
+
+.our-product-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  color: #00A8FF;
+  color: #00a8ff;
   text-decoration: none;
+  display: inline-block;
+  // margin-top: 20px;
 }
 
-.our-product-item-link:hover{
-  color: #0094E0;
+.our-product-item-link:hover {
+  color: #0094e0;
 }
 
-
-.triangle{
+.triangle {
   width: 4px;
-  background-image: url('../../img/our-products/Triangle.png');
+  background-image: url("../../img/our-products/Triangle.png");
   display: inline-block;
   height: 7px;
   margin-right: 3px;
 }
 
-.our-product-item-link:hover + .triangle{
-  background-image: url('../../img/our-products/Triangle_hover.png');
+.our-product-item-link:hover + .triangle {
+  background-image: url("../../img/our-products/Triangle_hover.png");
 }
-
-
