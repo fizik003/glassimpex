@@ -39,3 +39,24 @@
   margin-right: 8px;
   margin-left: 3px;
 }
+
+@media (max-width: 376px) {
+  .our-privilege-wrapper {
+    padding: 19px 20px 5px 18px;
+  }
+
+  .our-privilege-title {
+    padding-bottom: 24px;
+  }
+
+  .layout-3-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .layout-3-columns-item {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+}

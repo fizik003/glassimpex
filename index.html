@@ -13,25 +13,26 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="header-wrapper">
         <div class="logo"></div>
         <nav class="navigation">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-item-link" href="#">О нас</a></li>
-            <li class="nav-item"><a class="nav-item-link" href="#">Продукция</a></li>
-            <li class="nav-item"><a class="nav-item-link" href="#">Команда</a></li>
-            <li class="nav-item"><a class="nav-item-link" href="#">Ссылки</a>
+            <li class="nav-item"><a class="nav-item-link link" href="#about-us">О нас</a></li>
+            <li class="nav-item"><a class="nav-item-link link" href="#our-products">Продукция</a></li>
+            <li class="nav-item"><a class="nav-item-link link" href="#our-team">Команда</a></li>
+            <li class="nav-item"><a class="nav-item-link open" href="#">Ссылки</a>
               <ul class="sec-nav-list">
-                <li class="sec-nav-item"><a href="#">ISO certificates</a></li>
-                <li class="sec-nav-item"><a href="#">Conformity certificates</a></li>
-                <li class="sec-nav-item"><a href="#">СЕ Marking </a></li>
-                <li class="sec-nav-item"><a href="#">Pilkington Spectrum 7.1.0</a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="#">Conformity certificates</a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="#">СЕ Marking </a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="#">ISO certificates</a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="#">Pilkington Spectrum 7.1.0</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-item-link" href="#">Контакты</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#contacts">Контакты</a></li>
           </ul>
+          <a class="btn-in-header who-we-connect-btn" href="#">Связаться с нами</a>
         </nav>
         <select class="choice-lang" name="" id="">
           <option value="">RU</option>
@@ -39,11 +40,15 @@
           <option value="">EST</option>
 
         </select>
+        <div class="burger-btn">
+          <span></span>
+        </div>
       </div>
+      
     </div>
   </header>
   <main>
-    <section class="main-section">
+    <section class="main-section" >
       <div class="container">
         <div class="who-we-wrapper">
           <div class="who-we">
@@ -83,7 +88,7 @@
       </div>
 
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container">
         <div class="about-us-wrapper">
           <div class="about-us-text">
@@ -178,7 +183,7 @@
         </div>
       </div>
     </section>
-    <section class="our-products">
+    <section class="our-products" id="our-products">
       <div class="container">
         <div class="our-products-wrapper">
           <div class="layout-2-columns">
@@ -242,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="our-team">
       <div class="container">
         <div class="team-wrapper">
           <div class="team-title">
@@ -299,7 +304,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts-wrapper">
           <div class="contacts-text">
@@ -315,7 +320,7 @@
             <input type="email" class="field" name="email" placeholder="Email" required>
             <input type="text" class="field" name="theme" placeholder="Тема" >
             <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
-            <div><button class="contacts-send-btn" type="submit" >Отправить</button></div>
+            <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
           </form>
         </div>
       </div>
@@ -324,15 +329,36 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
+        <div class="footer-menu">
+          <div class="logo logo-footer"></div>
+          <nav class="footer-navigation">
+            <div class="footer-nav-list">
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#about-us">О нас</a></div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-products">Продукция</a></div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-team">Команда</a></div>
+              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link">Ссылки</p></div>
+              <div class="footer-sec-nav-list sec-nav-list-show">
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">ISO certificates</a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#"></a>Conformity certificates</div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">СЕ Marking </a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">Pilkington Spectrum 7.1.0</a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">Awards</a></div>
+              </div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#contacts">Контакты</a></div>
+            </div>
+          </nav>
+        </div>
         <div class="text">
           © 2019 Glassimpex. All rights reserved
         </div>
         <div class="developer">
           Made by ester.co
         </div>
+        </div>
       </div>
     </div>
   </footer>
+
   <script type="module" src="./src/scripts/script.js"></script>
 </body>
 

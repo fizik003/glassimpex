@@ -1,15 +1,14 @@
 import { showMap } from "../components/location/location.js";
-// function showMap(lat, lng) {
-//   mapboxgl.accessToken =
-//     "pk.eyJ1IjoiZml6aWsiLCJhIjoiY2thdTloZjJhMDk3NTJ5bzlqdmpuZXpzZSJ9.VRtOSj5RqTBn56KIVI1q6g";
-//   const map = new mapboxgl.Map({
-//     container: "map",
-//     style: "mapbox://styles/mapbox/streets-v11",
-//     center: [lat, lng],
-//     zoom: 15,
-//   });
-
-//   const marker = new mapboxgl.Marker().setLngLat([lat, lng]).addTo(map);
-// }
+import { openMenu } from "../components/footer/footer.js";
+import { Burger } from "../components/header/header.js";
 
 showMap(24.781375, 59.439932);
+
+const burger = new Burger();
+burger.openBurger();
+
+window.addEventListener("mouseup", (e) => {
+  if (e.target.classList.contains("link")) {
+    burger.closeBurger();
+  }
+});

@@ -23,3 +23,13 @@
   width: 100%;
   height: 350px;
 }
+
+@media (max-width: 376px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+
+  .location-img {
+    height: 210px;
+  }
+}

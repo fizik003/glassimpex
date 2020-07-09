@@ -29,4 +29,35 @@
 
 .about-us-img {
   margin-top: 64px;
+  width: 100%;
+}
+
+@media (max-width: 376px) {
+  .about-us-wrapper {
+    padding-left: 20px;
+    padding-top: 38px;
+    padding-bottom: 13px;
+    padding-right: 32px;
+  }
+
+  .about-us-text {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .about-us-title {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .about-us-descript p {
+    padding-top: 22px;
+  }
+
+  .about-us-img {
+    margin: 0;
+    width: 375px;
+    height: 170px;
+    margin-left: -20px;
+  }
 }

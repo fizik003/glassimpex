@@ -100,3 +100,38 @@
 .our-product-item-link:hover + .triangle {
   background-image: url("../../img/our-products/Triangle_hover.png");
 }
+
+@media (max-width: 376px) {
+  .our-products-wrapper {
+    padding: 34px 20px 1px 20px;
+  }
+
+  .item-description-text {
+    padding: 12px 0 0 4px;
+    width: auto;
+    margin-bottom: 27px;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+
+  .our-product-item-img {
+    width: 100%;
+    height: 336px;
+  }
+
+  .margin-top-small,
+  .margin-top-big {
+    margin-top: 0;
+    // margin-bottom: 50px;
+    // display: none;
+  }
+
+  .our-product-item-text {
+    padding: 20px 33.5px 25px 25px;
+    max-width: 246px;
+    // display: none;
+  }
+}

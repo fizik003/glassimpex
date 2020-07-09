@@ -47,12 +47,24 @@ h4 {
   padding-top: 7px;
 }
 
-p {
-  /* padding-bottom: 21px; */
-}
-
 .white {
   color: #ffffff;
 }
 
-/* our-products */
+@media (max-width: 376px) {
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height, or 150% */
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .overflow-hidden {
+    overflow-y: hidden;
+  }
+}

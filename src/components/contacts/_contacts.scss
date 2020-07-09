@@ -16,7 +16,7 @@
 
 .contacts-text {
   max-width: 296px;
-  margin-right: 154px;
+  margin-right: 203px;
 }
 
 .contacts-text p {
@@ -30,7 +30,6 @@
 .contacts-form {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
   max-width: 464px;
   width: 100%;
 }
@@ -76,4 +75,29 @@
 
 .contacts-send-btn:hover {
   background-color: #0094e0;
+}
+
+@media (max-width: 375px) {
+  .contacts-wrapper {
+    padding: 34px 20px 41px 20px;
+    flex-direction: column;
+  }
+
+  .contacts-text {
+    margin: 0 0 35px 0;
+  }
+
+  .field::placeholder {
+    font-size: 14px;
+    line-height: 34px;
+    /* identical to box height, or 243% */
+    color: #e2eff1;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .contacts-send-btn {
+    width: 100%;
+    padding: 12px 37px;
+  }
 }

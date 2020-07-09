@@ -56,3 +56,38 @@
   line-height: 24px;
   color: #000000;
 }
+
+@media (max-width: 376px) {
+  .team-wrapper {
+    padding: 34px 20px 0 20px;
+  }
+
+  .team-title {
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 26px;
+  }
+
+  .team-title-text {
+    margin-bottom: 11px;
+  }
+
+  .team-descriptipn {
+    width: 100%;
+    text-align: start;
+  }
+
+  .layout-4-columns {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .worker {
+    margin-bottom: 37px;
+  }
+
+  .worker-photo {
+    width: 250px;
+    height: 238px;
+  }
+}
