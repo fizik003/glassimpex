@@ -1,0 +1,82 @@
+.modal-send-request {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0b3142;
+  z-index: 200;
+  display: none;
+  overflow-y: scroll;
+  z-index: 6;
+}
+
+.send-request-wrapper {
+  padding: 28px 20px 0;
+}
+
+.send-request-title {
+  padding-top: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.btn-request-exit {
+  left: -21px;
+  position: relative;
+}
+
+.btn-request-exit span::before,
+.btn-request-exit span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 23px;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  display: block;
+}
+
+.btn-request-exit span::before {
+  transform: translateY(-8px);
+  transform: rotate(-45deg);
+}
+.btn-request-exit span::after {
+  transform: translateY(8px);
+  transform: rotate(45deg);
+}
+
+.btn-request-back {
+  position: relative;
+}
+
+.btn-request-back span::before,
+.btn-request-back span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 13px;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  display: block;
+}
+
+.btn-request-back span::before {
+  transform: translateY(-4px);
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.btn-request-back span::after {
+  transform: translateY(4px);
+  transform-origin: left;
+  transform: rotate(-45deg);
+}

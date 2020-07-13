@@ -9,10 +9,79 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
   <link rel="stylesheet" href="./dist/styles/index.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <title>Document</title>
 </head>
 
 <body>
+  <div class="modal-send-request">
+    
+    <div class="send-request-wrapper">
+      <div class="modal-buttons">
+        
+        <div class="btn-request-back">
+          <span></span>
+        </div>
+        <div class="btn-request-exit exit">
+          <span></span>
+        </div>
+      </div>
+      <h2 class="white send-request-title">Отправка запроса</h2>
+      <form method="POST" class="contacts-form">
+        <input type="text" class="field" name="name" placeholder="Ваше имя" required>
+        <input type="email" class="field" name="email" placeholder="Email" required>
+        <input type="text" class="field" name="theme" placeholder="Тема" >
+        <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
+        <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-our-products">
+    <div class="btn-exit exit">
+      <span></span>
+    </div>
+    <div class="modal-wrapper">
+
+      <div class="modal-container">
+        <div class="slider">
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+            </div>
+            <!-- Add Arrows -->
+            
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+        </div>
+        <div class="modal-text">
+          <h2  class="modal-text-title white">Строительное листовое стекло</h2>
+          <p class=" white modal-text-description">
+            В ассортимент входят все виды стекла 
+            PILKINTGTON, поставки осуществляются полными
+            грузовиками клиентам напрямую с заводов России,
+            Польши и Германии, а так же через наш склад
+            хранения стекла «Jumbo». Возможны поставки
+            стекла от других производителей со всего мира.
+          </p>
+          <div class="btn-sent-request">
+            <a class="link-send-request" href="#">Отправить запрос</a>
+            <span class="letter-ico"></span>
+          </div>
+          
+      
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  </div>
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -30,9 +99,9 @@
                 <li class="sec-nav-item"><a class="sec-nav-item-link link" href="#">Pilkington Spectrum 7.1.0</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-item-link" href="#contacts">Контакты</a></li>
+            <li class="nav-item"><a class="nav-item-link link" href="#contacts">Контакты</a></li>
           </ul>
-          <a class="btn-in-header who-we-connect-btn" href="#">Связаться с нами</a>
+          <a class="btn-in-header who-we-connect-btn link" href="#contacts">Связаться с нами</a>
         </nav>
         <select class="choice-lang" name="" id="">
           <option value="">RU</option>
@@ -60,28 +129,28 @@
                  листового стекла и стекла для картинных рамок
                   с 2010 года, входящих в концерн ANDRES GROUP AS
               </div>
-              <a class="who-we-connect-btn" href="#">Связаться с нами</a>
+              <a class="who-we-connect-btn" href="#contacts">Связаться с нами</a>
             </div>
             <div class="who-we-defenition-img"></div>
           </div>
-          <div class="who-we-list-links">
+          <div class="who-we-list-links products">
             <div class="who-we-link">
               <div class="who-we-link-ico-fg">
                 <img src="./src/img/main-section/window.svg" alt="window">
               </div>
-              <a href="#" class="who-we-text-link">Строительное листовое стекло</a>
+              <a href="#" id="product1" class="who-we-text-link">Строительное листовое стекло</a>
             </div>
             <div class="who-we-link">
               <div class="who-we-link-ico-gff">
                 <img src="./src/img/main-section/Shape.png" alt="shape">
               </div>
-              <a href="" class="who-we-text-link">Стекло для картинных рамок</a>
+              <a href="#" id="product2" class="who-we-text-link">Стекло для картинных рамок</a>
             </div>
             <div class="who-we-link">
               <div class="who-we-link-ico-gc">
                 <img src="./src/img/main-section/fireplace.png" alt="fireplace">
               </div>
-              <a href="" class="who-we-text-link">Стекло-керамика для каминов</a>
+              <a href="#" id="product3" class="who-we-text-link">Стекло-керамика для каминов</a>
             </div>
           </div>
         </div>
@@ -210,7 +279,7 @@
                   <h3 class="our-product-item-title">
                     Строительное листовое стекло
                   </h3>
-                  <a class="our-product-item-link" href="#">Узнать больше</a>
+                  <a class="our-product-item-link" id="product1" href="#">Узнать больше</a>
                   <span class="triangle"></span>
                 </div>
   
@@ -225,7 +294,7 @@
                   <h3 class="our-product-item-title">
                     Стекло для картинных рамок
                   </h3>
-                  <a class="our-product-item-link" href="#">Узнать больше</a>
+                  <a class="our-product-item-link" id="product2" href="#">Узнать больше</a>
                   <div class="triangle"></div>
                   
                 </div>
@@ -238,7 +307,7 @@
                   <h3 class="our-product-item-title">
                     Стеклокерамика для каминов
                   </h3>
-                  <a class="our-product-item-link" href="#">Узнать больше</a>
+                  <a class="our-product-item-link" id="product3" href="#">Узнать больше</a>
                   <span class="triangle"></span>
                 </div>
               </div>
@@ -337,7 +406,7 @@
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-products">Продукция</a></div>
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-team">Команда</a></div>
               <div class="footer-nav-item open-menu"><p class="footer-nav-item-link">Ссылки</p></div>
-              <div class="footer-sec-nav-list sec-nav-list-show">
+              <div class="footer-sec-nav-list">
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">ISO certificates</a></div>
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#"></a>Conformity certificates</div>
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="#">СЕ Marking </a></div>

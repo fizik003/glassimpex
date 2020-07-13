@@ -16,9 +16,6 @@ header {
   align-items: center;
 }
 
-.navigation {
-}
-
 .nav-list {
   display: flex;
 }
@@ -36,9 +33,6 @@ header {
 
 .nav-item a:hover {
   color: #00a8ff;
-}
-
-.nav-item-link {
 }
 
 .sec-nav-list {
@@ -91,9 +85,6 @@ header {
 }
 
 @media (max-width: 376px) {
-  .header {
-  }
-
   .header-wrapper {
     padding: 13px 20px 13px 20px;
     position: relative;
@@ -118,6 +109,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
   }
 
   .nav-list {
@@ -170,7 +162,7 @@ header {
     display: block;
     position: relative;
     right: 7.25%;
-    z-index: 444;
+    z-index: 4;
   }
 
   .burger-btn span,
