@@ -84,6 +84,124 @@ header {
   display: none;
 }
 
+@media (min-width: 377px) and(max-width:992px) {
+  .header-wrapper {
+    padding: 13px 20px 13px 20px;
+    position: relative;
+  }
+  .logo {
+    width: 102.4px;
+    height: 34px;
+    background-size: cover;
+  }
+
+  .navigation {
+    top: 60px;
+    position: fixed;
+    z-index: 555;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b3142;
+    left: 100%;
+    overflow-y: auto;
+    transition: all 1s ease-out;
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-item {
+    margin-bottom: 21px;
+  }
+
+  .nav-item-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0px 31px 26px;
+  }
+
+  .sec-nav-list {
+    position: inherit;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .sec-nav-item-link {
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .navigation-open {
+    left: 0;
+    transition: all 1s ease-out;
+  }
+
+  .choice-lang {
+    justify-self: flex-end;
+    margin-right: -30%;
+  }
+
+  .btn-in-header {
+    display: inline;
+  }
+
+  .burger-btn {
+    display: block;
+    position: relative;
+    right: 7.25%;
+    z-index: 4;
+  }
+
+  .burger-btn span,
+  .burger-btn span::before,
+  .burger-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 23px;
+    height: 2px;
+    background-color: #222;
+  }
+
+  .burger-btn span::before,
+  .burger-btn span::after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+  }
+
+  .burger-btn span::before {
+    transform: translateY(-8px);
+  }
+  .burger-btn span::after {
+    transform: translateY(8px);
+  }
+
+  .burger-btn-active span {
+    width: 0;
+  }
+
+  .burger-btn-active span:before {
+    transform: rotate(-45deg);
+  }
+  .burger-btn-active span:after {
+    transform: rotate(45deg);
+  }
+}
+
 @media (max-width: 376px) {
   .header-wrapper {
     padding: 13px 20px 13px 20px;

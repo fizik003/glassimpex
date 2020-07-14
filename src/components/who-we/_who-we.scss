@@ -83,6 +83,59 @@
   display: none;
 }
 
+@media (min-width: 377px) and (max-width: 992px) {
+  .main-section {
+    background-image: url("/src/img/main-section/viktor-jakovlev-H0vuplqoX0c-unsplash\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-in-header {
+    display: inline-block;
+  }
+
+  .who-we-wrapper {
+    padding-left: 20px;
+    padding-top: 46px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: rgba(4, 28, 78, 0.6);
+  }
+
+  .who-we {
+    margin-bottom: 47px;
+  }
+
+  .who-we-definition > h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 275px;
+  }
+
+  .who-we-defenition-img {
+    display: none;
+  }
+
+  .who-we-connect-btn {
+    padding: 12px 66px 13px 71px;
+    margin-bottom: 0px;
+  }
+
+  .who-we-list-links {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .who-we-link {
+    margin-bottom: 32px;
+  }
+}
+
 @media (max-width: 376px) {
   .main-section {
     background-image: url("/src/img/main-section/viktor-jakovlev-H0vuplqoX0c-unsplash\ 1.png");

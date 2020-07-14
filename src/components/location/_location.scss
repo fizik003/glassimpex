@@ -24,6 +24,16 @@
   height: 350px;
 }
 
+@media (min-width: 377px) and (max-width: 992px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+
+  .location-img {
+    height: 210px;
+  }
+}
+
 @media (max-width: 376px) {
   .location-wrapper {
     flex-direction: column;

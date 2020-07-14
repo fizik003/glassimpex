@@ -51,6 +51,24 @@ h4 {
   color: #ffffff;
 }
 
+@media (min-width: 377px) and (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height, or 150% */
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .overflow-hidden {
+    overflow-y: hidden;
+  }
+}
+
 @media (max-width: 376px) {
   h2 {
     font-size: 28px;

@@ -80,3 +80,15 @@
   transform-origin: left;
   transform: rotate(-45deg);
 }
+
+.request-form {
+  display: flex;
+  justify-content: center;
+
+  // margin-left: auto;
+  // margin-bottom: auto;
+}
+
+.request-form-wrapper {
+  width: 472px;
+}
