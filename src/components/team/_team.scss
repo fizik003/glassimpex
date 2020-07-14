@@ -57,9 +57,23 @@
   color: #000000;
 }
 
+@media (max-width: 1400px) {
+  .team-wrapper {
+    padding: 90px 20px;
+    // padding-top: 91px;
+    // padding-left: 99px;
+    // padding-right: 99px;
+  }
+
+  .worker-photo {
+    width: 250px;
+    height: 238px;
+  }
+}
+
 @media (min-width: 377px) and (max-width: 992px) {
   .team-wrapper {
-    padding: 34px 20px 0 20px;
+    padding: 34px 10% 0 10%;
   }
 
   .team-title {
@@ -78,12 +92,18 @@
   }
 
   .layout-4-columns {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-bottom: 0;
+    justify-content: center;
+    // flex-basis: 20;
   }
 
   .worker {
     margin-bottom: 37px;
+    margin: 0 auto 20px;
+    flex-basis: 40%;
   }
 
   .worker-photo {

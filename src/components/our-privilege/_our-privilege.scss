@@ -42,7 +42,7 @@
 
 @media (min-width: 377px) and (max-width: 992px) {
   .our-privilege-wrapper {
-    padding: 19px 20px 5px 18px;
+    padding: 19px 10% 5px 10%;
   }
 
   .our-privilege-title {
@@ -52,12 +52,19 @@
   .layout-3-columns {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .layout-3-columns-item {
     margin-bottom: 25px;
     max-width: 100%;
+    min-width: 249px;
+    flex: 1 1 0;
+  }
+
+  .layout-3-columns-text {
+    max-width: 500px;
   }
 }
 

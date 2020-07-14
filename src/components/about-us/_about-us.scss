@@ -36,12 +36,16 @@
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .about-us-title {
+    width: 120px;
+    margin-right: 25%;
+  }
+}
+
 @media (min-width: 377px) and (max-width: 992px) {
   .about-us-wrapper {
-    padding-left: 20px;
-    padding-top: 38px;
-    padding-bottom: 13px;
-    padding-right: 32px;
+    padding: 38px 5% 13px 10%;
   }
 
   .about-us-text {
@@ -52,6 +56,10 @@
   .about-us-title {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+
+  .about-us-descript {
+    max-width: 100%;
   }
 
   .about-us-descript p {

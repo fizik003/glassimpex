@@ -6,6 +6,9 @@ export function showMap(lat, lng) {
     style: "mapbox://styles/mapbox/streets-v11",
     center: [lat, lng],
     zoom: 15,
+    scrollZoom: {
+      ctrl: true,
+    },
   });
 
   const marker = new mapboxgl.Marker().setLngLat([lat, lng]).addTo(map);

@@ -79,8 +79,9 @@
 
 @media (min-width: 377px) and (max-width: 992px) {
   .contacts-wrapper {
-    padding: 34px 20px 41px 20px;
+    padding: 34px 10% 41px 10%;
     flex-direction: column;
+    align-items: center;
   }
 
   .contacts-text {

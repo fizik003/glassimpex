@@ -11,7 +11,7 @@ import { RequestModallogic } from "../../src/components/modal-send-request/modal
 
 const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");
-
+const logo = document.querySelector(".logo");
 showMap(24.781375, 59.439932);
 openFooterMenu();
 
@@ -22,6 +22,10 @@ window.addEventListener("mouseup", (e) => {
   if (e.target.classList.contains("link")) {
     burger.closeBurger();
   }
+});
+
+logo.addEventListener("click", () => {
+  window.location.hash = "header";
 });
 
 productLinks.addEventListener("click", (e) => {
