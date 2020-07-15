@@ -3,6 +3,10 @@
   src: url("../../fonts/HelveticaNeueCyr-Light.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -51,6 +55,10 @@ h4 {
   color: #ffffff;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
 @media (min-width: 377px) and (max-width: 992px) {
   h2 {
     font-size: 28px;
@@ -62,10 +70,6 @@ h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
-  }
-
-  .overflow-hidden {
-    overflow-y: hidden;
   }
 }
 
@@ -80,9 +84,5 @@ h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
-  }
-
-  .overflow-hidden {
-    overflow-y: hidden;
   }
 }

@@ -6,6 +6,7 @@ export function RequestModallogic() {
   const btnExit = document.querySelector(".exit");
   const body = document.querySelector("body");
   link.addEventListener("click", (e) => {
+    e.preventDefault();
     modalRequest.classList.add("modal-show");
   });
   btnBackRequest.addEventListener("click", () => {

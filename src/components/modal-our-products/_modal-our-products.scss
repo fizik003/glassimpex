@@ -1,5 +1,5 @@
 .modal-our-products {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -10,14 +10,18 @@
   overflow-y: scroll;
   z-index: 5;
   padding-top: 79px;
+  z-index: 6;
 }
 
 .btn-exit {
   display: block;
   position: absolute;
   z-index: 201;
-  right: 3.5%;
-  top: 3.5%;
+  right: 2.5%;
+  top: 2.5%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 .btn-exit span,
@@ -58,7 +62,7 @@
 .modal-container {
   display: flex;
   justify-content: center;
-  padding: 27px 19px 0 20px;
+  // padding: 27px 19px 0 20px;
 }
 
 .modal-show {
@@ -163,7 +167,7 @@
   display: inline-block;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 377px) and (max-width: 992px) {
   .modal-our-products {
     padding-top: 0;
   }
@@ -177,14 +181,15 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 27px 19px 0 20px;
   }
 
   .btn-exit {
     display: block;
     position: absolute;
     z-index: 201;
-    right: 10.6%;
-    top: 3.1%;
+    right: 5.6%;
+    top: 2.1%;
   }
 
   .btn-exit span::before,
@@ -214,11 +219,84 @@
     padding: 10px 0;
   }
 
-  // .gallery-thumbs .swiper-slide {
-  //   width: 10%;
-  //   height: 10%;
-  //   opacity: 0.4;
-  // }
+  .slider {
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  .modal-text {
+    margin-bottom: 57px;
+  }
+
+  .modal-text-title {
+    padding-top: 0;
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .modal-text-description {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    padding-right: 11px;
+  }
+
+  .btn-sent-request {
+    padding: 11px 18px 13px 19px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal-our-products {
+    padding-top: 0;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 27px 19px 0 20px;
+  }
+
+  .btn-exit {
+    display: block;
+    position: absolute;
+    z-index: 201;
+    right: 5.6%;
+    top: 2.1%;
+  }
+
+  .btn-exit span::before,
+  .btn-exit span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  .gallery-top {
+    // height: 200px;
+    // width: 335px;
+    margin-bottom: 12px;
+  }
+
+  .swiper-container {
+    width: 335px;
+    height: 200px;
+  }
+
+  .gallery-thumbs {
+    height: 60px;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
 
   .slider {
     display: inline-block;

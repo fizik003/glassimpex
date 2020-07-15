@@ -10,6 +10,7 @@ export function showMap(lat, lng) {
       ctrl: true,
     },
   });
+  map.scrollZoom.disable();
 
   const marker = new mapboxgl.Marker().setLngLat([lat, lng]).addTo(map);
 }

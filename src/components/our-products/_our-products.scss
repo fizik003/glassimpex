@@ -57,7 +57,7 @@
 .our-product-item-text {
   max-width: 300px;
   position: absolute;
-  z-index: 99;
+  z-index: 5;
   bottom: 0;
   background-color: #0b3142;
   padding: 24px 33.5px 22px 30px;
@@ -85,24 +85,17 @@
 
 .triangle {
   width: 4px;
-  background-image: url("../../img/our-products/Triangle.png");
+  background-image: url("/src/img/our-products/Triangle.png");
   display: inline-block;
   height: 7px;
   margin-right: 3px;
 }
 
 .our-product-item-link:hover + .triangle {
-  background-image: url("../../img/our-products/Triangle_hover.png");
+  background-image: url("/src/img/our-products/Triangle_hover.png");
 }
 
 @media (max-width: 1400px) {
-  // .row {
-  //   flex-direction: column;
-  //   margin-bottom: 26px;
-  //   align-items: center;
-  //   width: 100%;
-  // }
-
   .our-product-item-img {
     width: 100%;
     max-width: 400px;

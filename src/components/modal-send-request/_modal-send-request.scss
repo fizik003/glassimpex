@@ -1,5 +1,5 @@
 .modal-send-request {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -8,7 +8,7 @@
   z-index: 200;
   display: none;
   overflow-y: scroll;
-  z-index: 6;
+  z-index: 7;
 }
 
 .send-request-wrapper {
@@ -30,6 +30,7 @@
 .btn-request-exit {
   left: -21px;
   position: relative;
+  cursor: pointer;
 }
 
 .btn-request-exit span::before,
@@ -55,6 +56,7 @@
 
 .btn-request-back {
   position: relative;
+  cursor: pointer;
 }
 
 .btn-request-back span::before,

@@ -9,33 +9,34 @@ export function modalProductLogic(title, text) {
   prodTitle.textContent = title;
   prodDescription.innerHTML = text;
   modalWindow.classList.add("modal-show");
-  body.classList.toggle("overflow-hidden");
+  body.classList.add("overflow-hidden");
   btnExit.addEventListener("click", (e) => {
     modalWindow.classList.remove("modal-show");
     body.classList.remove("overflow-hidden");
   });
 }
 
-export function slider(arrImg) {
-  var galleryThumbs = new Swiper(".gallery-thumbs", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
+var galleryThumbs = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
 
-  galleryThumbs.a;
-  var galleryTop = new Swiper(".gallery-top", {
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: galleryThumbs,
-    },
-  });
+galleryThumbs.a;
+var galleryTop = new Swiper(".gallery-top", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
+export function slider(arrImg) {
   galleryTop.removeAllSlides();
   galleryThumbs.removeAllSlides();
 
@@ -51,4 +52,7 @@ export function slider(arrImg) {
   arrImg.map((el) => {
     addToSlider(el, galleryTop);
   });
+
+  galleryThumbs.update();
+  galleryTop.update();
 }

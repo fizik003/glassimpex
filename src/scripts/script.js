@@ -11,7 +11,7 @@ import { RequestModallogic } from "../../src/components/modal-send-request/modal
 
 const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");
-const logo = document.querySelector(".logo");
+const logo = document.querySelectorAll(".logo");
 showMap(24.781375, 59.439932);
 openFooterMenu();
 
@@ -24,11 +24,15 @@ window.addEventListener("mouseup", (e) => {
   }
 });
 
-logo.addEventListener("click", () => {
-  window.location.hash = "header";
+logo.forEach((el) => {
+  el.addEventListener("click", () => {
+    console.log(1);
+    window.location.href = "/";
+  });
 });
 
 productLinks.addEventListener("click", (e) => {
+  e.preventDefault();
   if (e.target.classList.contains("who-we-text-link")) {
     modalProductLogic(
       products[e.target.id].title,
@@ -40,6 +44,7 @@ productLinks.addEventListener("click", (e) => {
 });
 
 productLinks2.addEventListener("click", (e) => {
+  e.preventDefault();
   if (e.target.classList.contains("our-product-item-link")) {
     modalProductLogic(
       products[e.target.id].title,
