@@ -41,7 +41,10 @@
   justify-content: flex-end;
 }
 
-.our-product-item {
+// .our-product-item {
+//   position: relative;
+// }
+.our-product-item-wrapper {
   position: relative;
 }
 
@@ -98,9 +101,13 @@
 @media (max-width: 1400px) {
   .our-product-item-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 336px;
     height: 336px;
   }
+
+  // .margin-right {
+  //   margin-right: 20px;
+  // }
 }
 
 @media (min-width: 377px) and (max-width: 992px) {

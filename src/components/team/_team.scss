@@ -61,15 +61,28 @@
 
 @media (max-width: 1400px) {
   .team-wrapper {
-    padding: 90px 20px;
-    // padding-top: 91px;
-    // padding-left: 99px;
-    // padding-right: 99px;
+    // padding: 90px 99px;
+    padding-top: 91px;
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+  .layout-4-columns {
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
+
+  .worker {
+    margin-right: 20px;
+    flex-basis: 40%;
+    margin-bottom: 30px;
   }
 
   .worker-photo {
-    width: 250px;
-    height: 238px;
+    min-width: 238px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
   }
 }
 
