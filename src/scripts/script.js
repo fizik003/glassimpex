@@ -17,7 +17,7 @@ const productLinks2 = document.querySelector(".layout-2-columns");
 const logo = document.querySelectorAll(".logo");
 
 // let event = userAg != null ? "touch" : "click";
-let event = "touch";
+let event = "click";
 
 showMap(24.781375, 59.439932);
 openFooterMenu();
