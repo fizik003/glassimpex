@@ -7,7 +7,10 @@ import {
 } from "../components/modal-our-products/modal-our-products.js";
 import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
 import { products } from "../components/data/data.js";
-import { RequestModallogic } from "../../src/components/modal-send-request/modal-our-request.js";
+import {
+  RequestModallogic,
+  showRequestModal,
+} from "../../src/components/modal-send-request/modal-our-request.js";
 
 const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");

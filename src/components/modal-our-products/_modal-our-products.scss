@@ -142,11 +142,16 @@
   padding-left: 14px;
 }
 
-.btn-sent-request {
+.btn-send-request {
   padding: 10px 19px 10px 20px;
   border: 1px solid #00a9ff;
   width: 205px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .link-send-request {

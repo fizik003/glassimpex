@@ -1,5 +1,5 @@
 export function RequestModallogic() {
-  const link = document.querySelector(".link-send-request");
+  const link = document.querySelector(".btn-send-request");
   const modalRequest = document.querySelector(".modal-send-request");
   const modalProduct = document.querySelector(".modal-our-products");
   const btnBackRequest = document.querySelector(".btn-request-back");
@@ -18,4 +18,9 @@ export function RequestModallogic() {
     modalProduct.classList.remove("modal-show");
     body.classList.remove("overflow-hidden");
   });
+}
+
+export function showRequestModal() {
+  const modalRequest = document.querySelector(".modal-send-request");
+  modalRequest.classList.add("modal-show");
 }
