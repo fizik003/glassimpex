@@ -1,5 +1,9 @@
 header {
   background-color: #f8fafb;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  opacity: 1;
 }
 
 .logo {
@@ -103,16 +107,15 @@ header {
     position: fixed;
     z-index: 555;
     width: 100vw;
-    height: 100vh;
+    bottom: 0;
     background-color: #0b3142;
     left: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     transition: all 1s ease-out;
-    padding-top: 95px;
+    padding: 95px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
   }
 
   .nav-list {
@@ -220,19 +223,16 @@ header {
     top: 60px;
     position: fixed;
     z-index: 555;
-    width: 100%;
-    height: 100%;
-    // right: 0;
-    // bottom: 0;
+    width: 100vw;
+    bottom: 0;
     background-color: #0b3142;
     left: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     transition: all 1s ease-out;
-    padding-top: 95px;
+    padding: 95px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
   }
 
   .nav-list {
