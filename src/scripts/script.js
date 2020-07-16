@@ -16,7 +16,8 @@ const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");
 const logo = document.querySelectorAll(".logo");
 
-let event = userAg != null ? "touchstart" : "click";
+// let event = userAg != null ? "touchstart" : "click";
+let event = "click";
 
 showMap(24.781375, 59.439932);
 openFooterMenu();
@@ -62,3 +63,7 @@ productLinks2.addEventListener(event, (e) => {
 });
 
 RequestModallogic();
+
+console.log(userAg);
+console.log(event);
+console.log(navigator.userAgent);
