@@ -6,7 +6,7 @@ export class Burger {
   btnLinks = document.querySelector(".nav-item-link.open");
 
   openBurger = () => {
-    this.burgerBtn.addEventListener("click", (e) => {
+    this.burgerBtn.addEventListener("click", (event) => {
       this.burgerBtn.classList.toggle("burger-btn-active");
       this.navigationBlock.classList.toggle("navigation-open");
       this.body.classList.toggle("overflow-hidden");

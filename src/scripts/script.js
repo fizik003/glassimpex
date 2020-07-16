@@ -11,10 +11,13 @@ import {
   RequestModallogic,
   showRequestModal,
 } from "../../src/components/modal-send-request/modal-our-request.js";
-
+let userAg = navigator.userAgent.match(/iPhone|iPad|iPod/i);
 const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");
 const logo = document.querySelectorAll(".logo");
+
+let event = userAg != null ? "touchstart" : "click";
+
 showMap(24.781375, 59.439932);
 openFooterMenu();
 
@@ -34,7 +37,7 @@ logo.forEach((el) => {
   });
 });
 
-productLinks.addEventListener("click", (e) => {
+productLinks.addEventListener(event, (e) => {
   e.preventDefault();
   if (e.target.classList.contains("who-we-text-link")) {
     modalProductLogic(
@@ -46,7 +49,7 @@ productLinks.addEventListener("click", (e) => {
   }
 });
 
-productLinks2.addEventListener("click", (e) => {
+productLinks2.addEventListener(event, (e) => {
   e.preventDefault();
   if (e.target.classList.contains("our-product-item-link")) {
     modalProductLogic(
