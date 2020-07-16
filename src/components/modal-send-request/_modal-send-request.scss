@@ -96,3 +96,19 @@
 .request-form-wrapper {
   width: 472px;
 }
+
+.modal-show-req {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .request-form-wrapper {
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .request-form-wrapper {
+    min-height: 100%;
+  }
+}

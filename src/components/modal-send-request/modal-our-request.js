@@ -7,14 +7,14 @@ export function RequestModallogic() {
   const body = document.querySelector("body");
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    modalRequest.classList.add("modal-show");
+    modalRequest.classList.add("modal-show-req");
   });
   btnBackRequest.addEventListener("click", () => {
-    modalRequest.classList.remove("modal-show");
+    modalRequest.classList.remove("modal-show-req");
   });
 
   btnExit.addEventListener("click", () => {
-    modalRequest.classList.remove("modal-show");
+    modalRequest.classList.remove("modal-show-req");
     modalProduct.classList.remove("modal-show");
     body.classList.remove("overflow-hidden");
   });
