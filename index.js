@@ -58,6 +58,25 @@ btnExit.addEventListener("click", (e) => {
 });
 
 // modal-request
+const link = document.querySelector(".btn-send-request");
+const modalRequest = document.querySelector(".modal-send-request");
+const modalProduct = document.querySelector(".modal-our-products");
+const btnBackRequest = document.querySelector(".btn-request-back");
+const btnEx = document.querySelector(".exit");
+// const body = document.querySelector("body");
+link.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalRequest.classList.add("modal-show-req");
+});
+btnBackRequest.addEventListener("click", () => {
+  modalRequest.classList.remove("modal-show-req");
+});
+
+btnEx.addEventListener("click", () => {
+  modalRequest.classList.remove("modal-show-req");
+  modalProduct.classList.remove("modal-show");
+  body.classList.remove("overflow-hidden");
+});
 
 // header
 const navigationBlock = document.querySelector(".navigation");
@@ -73,9 +92,9 @@ burgerBtn.addEventListener("click", (event) => {
 
 window.addEventListener("mouseup", (e) => {
   if (e.target.classList.contains("link")) {
-    this.navigationBlock.classList.remove("navigation-open");
-    this.body.classList.remove("overflow-hidden");
-    this.burgerBtn.classList.remove("burger-btn-active");
+    navigationBlock.classList.remove("navigation-open");
+    body.classList.remove("overflow-hidden");
+    burgerBtn.classList.remove("burger-btn-active");
   }
 });
 
@@ -102,6 +121,16 @@ productLinks2.addEventListener("click", (e) => {
       products[e.target.id].description
     );
   }
+});
+
+// map
+
+// footer
+
+const btn_openMenu = document.querySelector(".open-menu");
+const menu = document.querySelector(".footer-sec-nav-list");
+btn_openMenu.addEventListener("click", () => {
+  menu.classList.toggle("sec-nav-list-show");
 });
 
 // data

@@ -16,9 +16,6 @@ const productLinks = document.querySelector(".who-we-list-links");
 const productLinks2 = document.querySelector(".layout-2-columns");
 const logo = document.querySelectorAll(".logo");
 
-// let event = userAg != null ? "touch" : "click";
-let event = "click";
-
 showMap(24.781375, 59.439932);
 openFooterMenu();
 
@@ -31,7 +28,7 @@ window.addEventListener("mouseup", (e) => {
   }
 });
 
-productLinks.addEventListener(event, (e) => {
+productLinks.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.classList.contains("who-we-text-link")) {
     modalProductLogic(
@@ -43,7 +40,7 @@ productLinks.addEventListener(event, (e) => {
   }
 });
 
-productLinks2.addEventListener(event, (e) => {
+productLinks2.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.classList.contains("our-product-item-link")) {
     modalProductLogic(
@@ -56,7 +53,3 @@ productLinks2.addEventListener(event, (e) => {
 });
 
 RequestModallogic();
-
-console.log(userAg);
-console.log(event);
-console.log(navigator.userAgent);
