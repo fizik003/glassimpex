@@ -107,18 +107,14 @@
   }
 
   .layout-4-columns {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 0;
-    justify-content: center;
-    // flex-basis: 20;
+    margin-right: -10px;
   }
 
   .worker {
-    margin-bottom: 37px;
-    margin: 0 auto 20px;
-    flex-basis: 40%;
+    margin-right: 10px;
+    flex-basis: 35%;
+    margin-bottom: 30px;
   }
 
   .worker-photo {

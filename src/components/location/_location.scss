@@ -5,12 +5,15 @@
 .location-img {
   height: 350px;
   flex-basis: 40.5%;
+  background-image: url("/src/img/location/photo.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.location-photo {
-  width: 100%;
-  height: 100%;
-}
+// .location-photo {
+//   width: 100%;
+//   height: 100%;
+// }
 
 .map-wrapper {
   flex-basis: 59.5%;
@@ -31,6 +34,10 @@
 
   .location-img {
     height: 210px;
+    background-image: url("/src/img/location/photo.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
   }
 }
 
@@ -41,5 +48,8 @@
 
   .location-img {
     height: 210px;
+    background-image: url("/src/img/location/photo.png");
+    background-size: cover;
+    background-position: center;
   }
 }

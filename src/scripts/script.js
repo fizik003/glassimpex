@@ -31,12 +31,12 @@ window.addEventListener("mouseup", (e) => {
   }
 });
 
-logo.forEach((el) => {
-  el.addEventListener("click", () => {
-    console.log(1);
-    window.location.href = "/";
-  });
-});
+// logo.forEach((el) => {
+//   el.addEventListener("click", () => {
+//     console.log(1);
+//     window.location.href = "/";
+//   });
+// });
 
 productLinks.addEventListener(event, (e) => {
   e.preventDefault();
