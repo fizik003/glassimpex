@@ -136,9 +136,17 @@ function showMap(lat, lng) {
       ctrl: true,
     },
   });
-  map.scrollZoom.disable();
 
   const marker = new mapboxgl.Marker().setLngLat([lat, lng]).addTo(map);
+  const mapWrap = document.querySelector(".map-wrapper");
+
+  mapWrap.onwheel = (e) => {
+    if (e.ctrlKey) {
+      map.scrollZoom.enable();
+    } else {
+      map.scrollZoom.disable();
+    }
+  };
 }
 
 showMap(24.781375, 59.439932);
