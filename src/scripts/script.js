@@ -83,3 +83,5 @@ click1.addEventListener("touchmove", () => {
 click5.onclick = () => {
   alert(5);
 };
+
+alert("123");
