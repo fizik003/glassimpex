@@ -38,6 +38,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    flex-basis: auto;
   }
 }
 
@@ -51,5 +52,6 @@
     background-image: url("/src/img/location/photo.png");
     background-size: cover;
     background-position: center;
+    flex-basis: auto;
   }
 }
