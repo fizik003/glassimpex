@@ -79,3 +79,7 @@ click1.addEventListener("touchcancel", () => {
 click1.addEventListener("touchmove", () => {
   alert("touchmove");
 });
+
+click5.onclick = () => {
+  alert(5);
+};
