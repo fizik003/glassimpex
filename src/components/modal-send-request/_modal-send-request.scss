@@ -102,13 +102,13 @@
 }
 
 @media (max-width: 992px) {
-  .request-form-wrapper {
-    min-height: 100%;
+  .request-form {
+    height: 100%;
   }
 }
 
 @media (max-width: 375px) {
-  .request-form-wrapper {
-    min-height: 100%;
+  .request-form {
+    height: 100%;
   }
 }
