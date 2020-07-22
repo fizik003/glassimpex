@@ -107,7 +107,24 @@
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
 }
+.swiper-button-next {
+  height: 115px !important;
+  top: 20px !important;
+  width: 66px !important;
+  right: -1px !important;
+  // background-color: gray;
+  background: linear-gradient(
+    270deg,
+    #0b3142 64.04%,
+    rgba(11, 49, 66, 0.0001) 95.72%
+  );
+}
 
+.swiper-button-next::after {
+  right: 10px !important;
+}
+
+// swiper-button-white
 .modal-text {
   max-width: 444px;
   display: inline-block;
@@ -187,6 +204,18 @@
 
   .slider {
     margin-top: 100px;
+  }
+  .swiper-button-next {
+    height: 62px !important;
+    top: 20px !important;
+    width: 66px !important;
+    right: -1px !important;
+    // background-color: gray;
+    background: linear-gradient(
+      270deg,
+      #0b3142 64.04%,
+      rgba(11, 49, 66, 0.0001) 95.72%
+    );
   }
 }
 
