@@ -85,16 +85,17 @@
 
 .request-form {
   display: flex;
+  // display: block;
   justify-content: center;
   height: 80vh;
   align-items: center;
-
   // margin-left: auto;
   // margin-bottom: auto;
 }
 
 .request-form-wrapper {
-  width: 472px;
+  max-width: 472px;
+  width: 100%;
 }
 
 .modal-show-req {

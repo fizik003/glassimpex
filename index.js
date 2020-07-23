@@ -1,7 +1,6 @@
 // modal-products
 
 const modalWindows = document.querySelectorAll(".modal-our-products");
-const body = document.querySelector("body");
 const btnExit = document.querySelectorAll(".btn-exit");
 const prodTitle = document.querySelector(".modal-text-title");
 const prodDescription = document.querySelector(".modal-text-description");
@@ -38,7 +37,7 @@ btnExit.forEach((el) => {
     modalWindows.forEach((el) => {
       el.classList.remove("modal-show");
     });
-    body.classList.remove("overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
   });
 });
 
@@ -47,7 +46,6 @@ const links = document.querySelectorAll(".btn-send-request");
 const modalRequest = document.querySelector(".modal-send-request");
 const btnBackRequest = document.querySelector(".btn-request-back");
 const btnEx = document.querySelector(".exit");
-// const body = document.querySelector("body");
 
 links.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -76,13 +74,13 @@ const btnLinks = document.querySelector(".nav-item-link.open");
 burgerBtn.addEventListener("click", (event) => {
   burgerBtn.classList.toggle("burger-btn-active");
   navigationBlock.classList.toggle("navigation-open");
-  body.classList.toggle("overflow-hidden");
+  document.body.classList.toggle("overflow-hidden");
 });
 
 window.addEventListener("mouseup", (e) => {
   if (e.target.classList.contains("link")) {
     navigationBlock.classList.remove("navigation-open");
-    body.classList.remove("overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
     burgerBtn.classList.remove("burger-btn-active");
   }
 });
