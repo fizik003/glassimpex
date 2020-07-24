@@ -105,6 +105,18 @@ productLinks2.addEventListener("click", (e) => {
   }
 });
 
+const anchors = document.querySelectorAll('a[href*="#"]');
+anchors.forEach((el) => {
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
+    const blockId = el.getAttribute("href");
+    document.querySelector(" " + blockId).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
+
 // footer
 
 const btn_openMenu = document.querySelector(".open-menu");
