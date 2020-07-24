@@ -7,7 +7,7 @@
   background-color: #0b3142;
   z-index: 200;
   display: none;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 5;
   padding: 79px 0;
   z-index: 7;
@@ -225,7 +225,7 @@
   }
 
   .modal-wrapper {
-    min-height: 100%;
+    // min-height: 100%;
     padding: 27px 19px 0 20px;
   }
   .modal-container {

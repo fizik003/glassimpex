@@ -7,13 +7,13 @@
   background-color: #0b3142;
   z-index: 200;
   display: none;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 8;
 }
 
 .send-request-wrapper {
   padding: 28px 20px;
-  min-height: 100vh;
+  min-height: 93vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
