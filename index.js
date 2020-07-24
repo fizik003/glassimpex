@@ -41,6 +41,26 @@ btnExit.forEach((el) => {
   });
 });
 
+const productLinks = document.querySelector(".who-we-list-links");
+productLinks.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.classList.contains("who-we-text-link")) {
+    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
+    document.body.classList.add("overflow-hidden");
+    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
+    slider(e.target.id);
+  }
+});
+const productLinks2 = document.querySelector(".layout-2-columns");
+productLinks2.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.classList.contains("our-product-item-link")) {
+    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
+    document.body.classList.add("overflow-hidden");
+    slider(e.target.id);
+  }
+});
+
 // modal-request
 const links = document.querySelectorAll(".btn-send-request");
 const modalRequest = document.querySelector(".modal-send-request");
@@ -66,64 +86,44 @@ btnEx.addEventListener("click", () => {
 });
 
 // header
-const navigationBlock = document.querySelector(".navigation");
-const burgerBtn = document.querySelector(".burger-btn");
-const btnContact = document.querySelector(".btn-in-header");
-const btnLinks = document.querySelector(".nav-item-link.open");
+// const navigationBlock = document.querySelector(".navigation");
+// const burgerBtn = document.querySelector(".burger-btn");
+// const btnContact = document.querySelector(".btn-in-header");
+// const btnLinks = document.querySelector(".nav-item-link.open");
 
-burgerBtn.addEventListener("click", (event) => {
-  burgerBtn.classList.toggle("burger-btn-active");
-  navigationBlock.classList.toggle("navigation-open");
-  document.body.classList.toggle("overflow-hidden");
-});
+// burgerBtn.addEventListener("click", (event) => {
+//   burgerBtn.classList.toggle("burger-btn-active");
+//   navigationBlock.classList.toggle("navigation-open");
+//   document.body.classList.toggle("overflow-hidden");
+// });
 
-window.addEventListener("mouseup", (e) => {
-  if (e.target.classList.contains("link")) {
-    navigationBlock.classList.remove("navigation-open");
-    document.body.classList.remove("overflow-hidden");
-    burgerBtn.classList.remove("burger-btn-active");
-  }
-});
+// window.addEventListener("mouseup", (e) => {
+//   if (e.target.classList.contains("link")) {
+//     navigationBlock.classList.remove("navigation-open");
+//     document.body.classList.remove("overflow-hidden");
+//     burgerBtn.classList.remove("burger-btn-active");
+//   }
+// });
 
-const productLinks = document.querySelector(".who-we-list-links");
-productLinks.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (e.target.classList.contains("who-we-text-link")) {
-    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
-    document.body.classList.add("overflow-hidden");
-    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
-    slider(e.target.id);
-  }
-});
-const productLinks2 = document.querySelector(".layout-2-columns");
-productLinks2.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (e.target.classList.contains("our-product-item-link")) {
-    document.querySelector(`.${e.target.id}`).classList.add("modal-show");
-    document.body.classList.add("overflow-hidden");
-    slider(e.target.id);
-  }
-});
+// const anchors = document.querySelectorAll('a[href*="#"]');
+// anchors.forEach((el) => {
+//   el.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     const blockId = el.getAttribute("href");
+//     // document.querySelector(" " + blockId).scrollIntoView({
+//     //   behavior: "smooth",
+//     //   block: "start",
+//     // });
+//     window.scrollTo({
+//       top: document.querySelector(blockId).offsetTop - 50,
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
-const anchors = document.querySelectorAll('a[href*="#"]');
-anchors.forEach((el) => {
-  el.addEventListener("click", (event) => {
-    event.preventDefault();
-    const blockId = el.getAttribute("href");
-    // document.querySelector(" " + blockId).scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "start",
-    // });
-    window.scrollTo({
-      top: document.querySelector(blockId).offsetTop - 50,
-      behavior: "smooth",
-    });
-  });
-});
-
-document.addEventListener("dblclick", () => {
-  console.log(pageYOffset);
-});
+// document.addEventListener("dblclick", () => {
+//   console.log(pageYOffset);
+// });
 
 // footer
 
