@@ -110,11 +110,19 @@ anchors.forEach((el) => {
   el.addEventListener("click", (event) => {
     event.preventDefault();
     const blockId = el.getAttribute("href");
-    document.querySelector(" " + blockId).scrollIntoView({
+    // document.querySelector(" " + blockId).scrollIntoView({
+    //   behavior: "smooth",
+    //   block: "start",
+    // });
+    window.scrollTo({
+      top: document.querySelector(blockId).offsetTop - 50,
       behavior: "smooth",
-      block: "start",
     });
   });
+});
+
+document.addEventListener("dblclick", () => {
+  console.log(pageYOffset);
 });
 
 // footer
