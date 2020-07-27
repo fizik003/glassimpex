@@ -96,16 +96,15 @@
     padding-right: 99px;
   }
   .layout-4-columns {
-    flex-wrap: wrap;
     margin-right: -20px;
   }
 
   .worker {
     margin-right: 20px;
-    flex-basis: 40%;
+    // flex-basis: 40%;
     margin-bottom: 30px;
-    width: 49%;
-    min-width: 300px;
+    // width: 49%;
+    // min-width: 300px;
   }
 
   // .worker-photo {
@@ -148,9 +147,15 @@
   }
 
   .worker {
-    margin-right: 10px;
-    flex-basis: 35%;
+    // margin-right: 15px;
+    flex-basis: 45%;
     margin-bottom: 30px;
+    margin-right: unset;
+    min-width: 250px;
+  }
+
+  .worker:nth-child(odd) {
+    margin-right: 15px;
   }
 
   //   .worker-photo {

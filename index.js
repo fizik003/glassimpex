@@ -8,7 +8,7 @@ const prodDescription = document.querySelector(".modal-text-description");
 function slider(product) {
   document.body.classList.add("overflow-hidden");
 
-  var galleryThumbs = new Swiper(`.gallery-thumbs-${product}`, {
+  const galleryThumbs = new Swiper(`.gallery-thumbs-${product}`, {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -16,8 +16,7 @@ function slider(product) {
     watchSlidesProgress: true,
   });
 
-  galleryThumbs.a;
-  var galleryTop = new Swiper(`.gallery-top-${product}`, {
+  const galleryTop = new Swiper(`.gallery-top-${product}`, {
     spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -27,9 +26,6 @@ function slider(product) {
       swiper: galleryThumbs,
     },
   });
-
-  galleryThumbs.update();
-  galleryTop.update();
 }
 
 btnExit.forEach((el) => {
@@ -127,8 +123,8 @@ btnEx.addEventListener("click", () => {
 
 // footer
 
-const btn_openMenu = document.querySelector(".open-menu");
-const menu = document.querySelector(".footer-sec-nav-list");
-btn_openMenu.addEventListener("click", () => {
-  menu.classList.toggle("sec-nav-list-show");
-});
+// const btn_openMenu = document.querySelector(".open-menu");
+// const menu = document.querySelector(".footer-sec-nav-list");
+// btn_openMenu.addEventListener("click", () => {
+//   menu.classList.toggle("sec-nav-list-show");
+// });
