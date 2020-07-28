@@ -20,6 +20,22 @@
   opacity: 0.3;
 }
 
+.links-menu {
+  position: relative;
+}
+
+.links-menu::after {
+  position: absolute;
+  content: "▶";
+  right: -5px;
+  transition: all 0.5s;
+}
+
+.links-menu-active::after {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
 .footer-menu {
   display: none;
 }

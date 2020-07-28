@@ -267,15 +267,15 @@
           <div class="who-we-list-links products">
             <div class="who-we-link">
               <img src="./src/img/main-section/window.svg" alt="window">
-              <a href="" id="product1" class="who-we-text-link">Строительное листовое стекло</a>
+              <a href="" id="product1" class="who-we-text-link product-link">Строительное листовое стекло</a>
             </div>
             <div class="who-we-link">
               <img src="./src/img/main-section/Shape.png" alt="shape">
-              <a href="" id="product2" class="who-we-text-link">Стекло для картинных рамок</a>
+              <a href="" id="product2" class="who-we-text-link product-link">Стекло для картинных рамок</a>
             </div>
             <div class="who-we-link">
               <img src="./src/img/main-section/fireplace.png" alt="fireplace">
-              <a href="" id="product3" class="who-we-text-link">Стекло-керамика для каминов</a>
+              <a href="" id="product3" class="who-we-text-link product-link">Стекло-керамика для каминов</a>
             </div>
           </div>
         </div>
@@ -383,7 +383,7 @@
     <section class="our-products" id="our-products">
       <div class="container">
         <div class="our-products-wrapper">
-          <div class="layout-2-columns">
+          <!-- <div class="layout-2-columns">
             <div class="row content">
               <div class="item-description">
                 <h2 class="white">Наши продукты</h2>
@@ -442,6 +442,58 @@
                 </div>
               </div>
             </div>
+          </div> -->
+          <div class="our-products-layout-2-columns">
+            <div class="our-products-item">
+              <div class="item-description">
+                <h2 class="white">Наши продукты</h2>
+                <div class="item-description-text">
+                  Наша фирма представляет интересы известного 
+                  во всём мире стекольного бренда PILKINGTON 
+                  GLASS в странах Балтии и занимается 
+                  поставками как базовых так и сложных 
+                  архитектурных сырьевых стекол формата 
+                  Jumbo и DLF.
+                  <p>
+                    Также мы предлагаем стекло для 
+                    картинных рамок и прочие виды листового
+                    стекла по всей Европе уже много лет.
+                  </p>
+                </div>  
+              </div>
+            
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/window.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Строительное листовое стекло</h3>
+                <a class="our-product-item-link product-link" id="product1" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/table.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Стекло для картинных рамок</h3>
+                <a class="our-product-item-link product-link" id="product2" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/fireplace.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Стеклокерамика для каминов</h3>
+                <a class="our-product-item-link product-link" id="product3" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -546,7 +598,7 @@
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#about-us">О нас</a></div>
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-products">Продукция</a></div>
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-team">Команда</a></div>
-              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link">Ссылки</p></div>
+              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link links-menu">Ссылки</p></div>
               <div class="footer-sec-nav-list">
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">ISO certificates</a></div>
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href=""></a>Conformity certificates</div>
@@ -571,8 +623,9 @@
 
   <!-- <script type="module" src="./src/scripts/script.js"></script> -->
   <script src="/js/organisms/header/header.js"></script>
-  <script src="./index.js"></script>
   <script src="/js/organisms/footer/footer.js"></script>
+  <script src="/js/organisms/modal-our-products/modal-our-products.js"></script>
+  <script src="/js/organisms/modal-send-request/modal-send-request.js"></script>
 </body>
 
 
