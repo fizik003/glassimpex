@@ -1,0 +1,134 @@
+.modal-send-request {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0b3142;
+  z-index: 200;
+  display: none;
+  overflow-y: auto;
+  z-index: 8;
+}
+
+.send-request-wrapper {
+  padding: 28px 20px;
+  min-height: 93vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.send-request-title {
+  padding-top: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  position: absolute;
+  top: 22px;
+  width: 96%;
+}
+
+.btn-request-exit {
+  left: -21px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-request-exit span::before,
+.btn-request-exit span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 23px;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  display: block;
+}
+
+.btn-request-exit span::before {
+  transform: translateY(-8px);
+  transform: rotate(-45deg);
+}
+.btn-request-exit span::after {
+  transform: translateY(8px);
+  transform: rotate(45deg);
+}
+
+.btn-request-back {
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-request-back span::before,
+.btn-request-back span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 13px;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  display: block;
+}
+
+.btn-request-back span::before {
+  transform: translateY(-4px);
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.btn-request-back span::after {
+  transform: translateY(4px);
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+
+.request-form {
+  display: flex;
+  // display: block;
+  justify-content: center;
+  align-items: center;
+  // margin-left: auto;
+  // margin-bottom: auto;
+}
+
+.request-form-wrapper {
+  max-width: 472px;
+  width: 100%;
+}
+
+.modal-show-req {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .request-form {
+    height: 100%;
+  }
+
+  .modal-buttons {
+    width: 92%;
+  }
+
+  .send-request-wrapper {
+    // min-height: unset;
+  }
+}
+
+@media (max-width: 375px) {
+  .request-form {
+    height: 100%;
+  }
+
+  .modal-buttons {
+    width: 89%;
+  }
+}

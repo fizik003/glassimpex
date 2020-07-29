@@ -1,0 +1,138 @@
+.contacts {
+  background-color: #0b3142;
+}
+
+.contacts-wrapper {
+  padding-left: 98px;
+  padding-right: 99px;
+  padding-top: 91px;
+  padding-bottom: 91px;
+  display: flex;
+}
+
+.contacts-title {
+  margin-bottom: 15px;
+}
+
+.contacts-text {
+  max-width: 296px;
+  margin-right: 203px;
+}
+
+.contacts-text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.contacts-text p a {
+  text-decoration: none;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 464px;
+  width: 100%;
+}
+
+.field {
+  background-color: #123849;
+  border: none;
+  margin-bottom: 11px;
+  border-radius: 2px;
+  outline: none;
+  padding: 19px 20px;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.field:focus {
+  border: 2px solid #31677e;
+  padding: 17px 18px;
+}
+
+.field::placeholder {
+  font-size: 14px;
+  line-height: 34px;
+  color: #e2eff1;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.textarea-message::placeholder {
+  line-height: 20px;
+}
+
+.contacts-send-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  background: #00a8ff;
+  padding: 9px 37px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contacts-send-btn:hover {
+  background-color: #0094e0;
+}
+
+@media (min-width: 377px) and (max-width: 992px) {
+  .contacts-wrapper {
+    padding: 34px 10% 41px 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-text {
+    margin: 0 0 35px 0;
+  }
+
+  .field::placeholder {
+    font-size: 14px;
+    line-height: 34px;
+    /* identical to box height, or 243% */
+    color: #e2eff1;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .contacts-send-btn {
+    width: 100%;
+    padding: 12px 37px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts-wrapper {
+    padding: 34px 20px 41px 20px;
+    flex-direction: column;
+  }
+
+  .contacts-text {
+    margin: 0 0 35px 0;
+  }
+
+  .field::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 243% */
+    color: #e2eff1;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .contacts-send-btn {
+    width: 100%;
+    padding: 12px 37px;
+  }
+}

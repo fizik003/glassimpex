@@ -1,0 +1,88 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../../fonts/HelveticaNeueCyr-Light.ttf");
+}
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #022f40;
+  display: block;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2b2b2b;
+  align-items: center;
+}
+
+.layout-3-columns-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #2b2b2b;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  max-width: 249px;
+  padding-left: 17px;
+  padding-top: 7px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
+@media (min-width: 377px) and (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height, or 150% */
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 376px) {
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height, or 150% */
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

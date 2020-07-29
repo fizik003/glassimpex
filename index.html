@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/styles/index.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="modal-send-request">
+    
+    <div class="send-request-wrapper">
+      <div class="modal-buttons">
+        
+        <div class="btn-request-back">
+          <span></span>
+        </div>
+        <div class="btn-request-exit exit">
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="request-form">
+        <div class="request-form-wrapper">
+          <h2 class="white send-request-title">Отправка запроса</h2>
+          <form method="POST" class="contacts-form">
+            <input type="text" class="field" name="name" placeholder="Ваше имя" required>
+            <input type="email" class="field" name="email" placeholder="Email" required>
+            <input type="text" class="field" name="theme" placeholder="Тема" >
+            <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
+            <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-our-products product1" id="product-1">
+    <div class="btn-exit exit">
+      <span></span>
+    </div>
+    <div class="modal-wrapper">
+
+      <div class="modal-container">
+        <div class="slider">
+          <div class="swiper-container gallery-top gallery-top-product1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/5.jpg);"></div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs gallery-thumbs-product1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/window/5.jpg);"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+        </div>
+        <div class="modal-text">
+          <h2  class="modal-text-title white">Строительное листовое стекло</h2>
+          <p class=" white modal-text-description">
+            В ассортимент входят все виды стекла 
+            PILKINTGTON, поставки осуществляются полными
+            грузовиками клиентам напрямую с заводов России,
+            Польши и Германии, а так же через наш склад
+            хранения стекла «Jumbo». Возможны поставки
+            стекла от других производителей со всего мира.
+          </p>
+          <button  class="btn-send-request">
+            <p class="link-send-request" >Отправить запрос</p>
+            <span class="letter-ico"></span>
+          </button>
+          
+      
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-our-products product2" id="product-2">
+    <div class="btn-exit exit">
+      <span></span>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal-container">
+        <div class="slider">
+          <div class="swiper-container gallery-top gallery-top-product2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/5.jpg);"></div>
+            </div>
+           
+            
+          </div>
+          <div class="swiper-container gallery-thumbs gallery-thumbs-product2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product2/5.jpg);"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+        </div>
+        <div class="modal-text">
+          <h2  class="modal-text-title white">Стекло для картинных рамок</h2>
+          <div class=" white modal-text-description">
+            <ul class="more-details-list">
+              <li class="more-details-prod"> 
+                Нерезанное и резанное нешлифованное 
+                sheet-стекло Российского производства, 
+                изготовленное по технологии горизонтального 
+                вытягивания «Colburn». Доступные толщины 
+                (мм): 2,0; 1,8; 1,5.
+              </li> 
+              <li class="more-details-prod">
+                Нерезанное и резанное шлифованное
+                float-стекло от других производителей.
+                Доступные толщины (мм): 2,10; 2,0. 
+              </li> 
+              <li class="more-details-prod">
+                Резанное стекло хранится на нашем 
+                складе в Таллинне, в деревянных ящиках, 
+                разных стандартных размеров, и каждый 
+                лист в ящике упакован отдельно. 
+                Закупки возможны как полными грузами прямо
+                с завода, так и поящично с нашего склада.
+              </li> 
+            </ul>
+          </div>
+          <button  class="btn-send-request">
+            <p class="link-send-request" >Отправить запрос</p>
+            <span class="letter-ico"></span>
+          </button>
+          
+      
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-our-products product3" id="product-3">
+    <div class="btn-exit exit">
+      <span></span>
+    </div>
+    <div class="modal-wrapper">
+
+      <div class="modal-container">
+        <div class="slider">
+          <div class="swiper-container gallery-top gallery-top-product3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/5.jpg);"></div>
+            </div>
+            
+          </div>
+          <div class="swiper-container gallery-thumbs gallery-thumbs-product3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/3.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/4.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(/src/img/modal/product3/5.jpg);"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+        </div>
+        <div class="modal-text">
+          <h2  class="modal-text-title white">Стекло-керамика для каминов</h2>
+          <p class=" white modal-text-description">
+            Керамическое стекло с высокой 
+            степенью сопротивления огню для каминов 
+            японского бренда Nippon Electronic Glass 
+            NEOCERAM N-0. Cтекло доступно поящично 
+            с доставкой до клиента. Размер стекла 1266х2100 мм
+          </p>
+          <button  class="btn-send-request">
+            <p class="link-send-request" >Отправить запрос</p>
+            <span class="letter-ico"></span>
+          </button>
+          
+      
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="/" class="logo"></a>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-item-link link" href="#about-us">О нас</a></li>
+            <li class="nav-item"><a class="nav-item-link link" href="#our-products">Продукция</a></li>
+            <li class="nav-item"><a class="nav-item-link link" href="#our-team">Команда</a></li>
+            <li class="nav-item"><a class="nav-item-link open" href="">Ссылки</a>
+              <ul class="sec-nav-list">
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="">Conformity certificates</a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="">СЕ Marking </a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="">ISO certificates</a></li>
+                <li class="sec-nav-item"><a class="sec-nav-item-link link" href="">Pilkington Spectrum 7.1.0</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-item-link link" href="#contacts">Контакты</a></li>
+          </ul>
+          <a class="btn-in-header who-we-connect-btn link" href="#contacts">Связаться с нами</a>
+        </nav>
+        <select class="choice-lang" name="" id="">
+          <option value="">RU</option>
+          <option value="">EN</option>
+          <option value="">EST</option>
+
+        </select>
+        <div class="burger-btn">
+          <span></span>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  <main>
+    <section class="main-section" >
+      <div class="container">
+        <div class="who-we-wrapper">
+          <div class="who-we">
+            <div class="who-we-definition">
+              <h1>Мы — Glassimpex OÜ</h1>
+              <div class="who-we-definition-text">
+                Международная компания из Эстонии,
+                 занимающаяся торговлей разных видов 
+                 листового стекла и стекла для картинных рамок
+                  с 2010 года, входящих в концерн ANDRES GROUP AS
+              </div>
+              <a class="who-we-connect-btn" href="#contacts">Связаться с нами</a>
+            </div>
+            <div class="who-we-defenition-img">
+              <img class="who-we-defenotion-picture" src="/src/img/main-section/1.png" alt="">
+            </div>
+          </div>
+          <div class="who-we-list-links products">
+            <div class="who-we-link">
+              <img src="./src/img/main-section/window.svg" alt="window">
+              <a href="" id="product1" class="who-we-text-link product-link">Строительное листовое стекло</a>
+            </div>
+            <div class="who-we-link">
+              <img src="./src/img/main-section/Shape.png" alt="shape">
+              <a href="" id="product2" class="who-we-text-link product-link">Стекло для картинных рамок</a>
+            </div>
+            <div class="who-we-link">
+              <img src="./src/img/main-section/fireplace.png" alt="fireplace">
+              <a href="" id="product3" class="who-we-text-link product-link">Стекло-керамика для каминов</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <div class="about-us-wrapper">
+          <div class="about-us-text">
+            <div class="about-us-title">
+              <h2>О нас</h2>
+            </div>
+            <div class="about-us-descript">
+              Glassimpex OÜ имеет широкую известность 
+              среди всех стеклообработчиков в странах 
+              Балтии и занимает лидерующую позицию по 
+              поставкам листового стекла.
+              <p>Наша миссия — обеспечить 
+              клиентов максимально качественным сервисом,
+               простой и комфортной повседневной работой,
+                связанной с закупками стекла</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-us-img-wrapper">
+          <img class="about-us-img" src="./src/img/about-us-section/DSC_6563.png" alt="windows">
+        </div>
+      </div>
+    </section>
+    <section class="our-privilege">
+      <div class="container">
+        <div class="our-privilege-wrapper">
+          <h2 class= 'our-privilege-title'>Наши преимущества</h2>
+          <div class="our-privilege-list">
+            <ul class="layout-3-columns">
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Полный спектр услуг</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Полный спектр услуг по закупке
+                  стекла — доставка, таможенная 
+                  очистка, техническая поддержка
+                  с завода и пр.
+                </p>
+              </li>
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Скорость</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Скорость в обслуживании наших 
+                  клиентов и принятии решений
+                </p>
+              </li>
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Качество и Доступность</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Cтабильно качественный 
+                  и доступный продукт
+                </p>
+              </li>
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Доступные цены</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Мы предлагаем нашим покупателям 
+                  доступные и конкурентноспособные цены
+                </p>
+              </li>
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Компетентные сотрудники</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Компетентные сотрудники, готовые
+                   быстро найти нужное и гибкое решение
+                </p>
+              </li>
+              <li class="layout-3-columns-item">
+                <div class="layout-3-columns-title">
+                  <span class="layout-3-columns-marker"></span>
+                  <h4>Склад в Таллинне</h4>
+                </div>
+                <p class="layout-3-columns-text">
+                  Наличие склада для хранения
+                  стекла разного вида в Таллинне
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-products" id="our-products">
+      <div class="container">
+        <div class="our-products-wrapper">
+          <!-- <div class="layout-2-columns">
+            <div class="row content">
+              <div class="item-description">
+                <h2 class="white">Наши продукты</h2>
+                <div class="item-description-text">
+                  Наша фирма представляет интересы известного 
+                  во всём мире стекольного бренда PILKINGTON 
+                  GLASS в странах Балтии и занимается 
+                  поставками как базовых так и сложных 
+                  архитектурных сырьевых стекол формата 
+                  Jumbo и DLF.
+                  <p>
+                    Также мы предлагаем стекло для 
+                    картинных рамок и прочие виды листового
+                    стекла по всей Европе уже много лет.
+                  </p>
+                </div>  
+              </div>
+              <div class="our-product-item margin-right">
+                <div class="our-product-item-wrapper">
+                  <img class="our-product-item-img" src="./src/img/our-products/window.png" alt="table">
+                  <div class="our-product-item-text">
+                    <h3 class="our-product-item-title">
+                      Строительное листовое стекло
+                    </h3>
+                    <a class="our-product-item-link" id="product1" href="">Узнать больше</a>
+                    <span class="triangle"></span>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+           
+           
+            <div class="row margin-top-small">
+              <div class="our-product-item-wrapper margin-right">
+                <img class="our-product-item-img" src="./src/img/our-products/table.png" alt="table">
+                <div class="our-product-item-text">
+                  <h3 class="our-product-item-title">
+                    Стекло для картинных рамок
+                  </h3>
+                  <a class="our-product-item-link" id="product2" href="">Узнать больше</a>
+                  <div class="triangle"></div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row flex-end margin-top-big">
+              <div class="our-product-item-wrapper ">
+                <img class="our-product-item-img" src="./src/img/our-products/fireplace.png" alt="table">
+                <div class="our-product-item-text">
+                  <h3 class="our-product-item-title">
+                    Стеклокерамика для каминов
+                  </h3>
+                  <a class="our-product-item-link" id="product3" href="">Узнать больше</a>
+                  <span class="triangle"></span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="our-products-layout-2-columns">
+            <div class="our-products-item">
+              <div class="item-description">
+                <h2 class="white">Наши продукты</h2>
+                <div class="item-description-text">
+                  Наша фирма представляет интересы известного 
+                  во всём мире стекольного бренда PILKINGTON 
+                  GLASS в странах Балтии и занимается 
+                  поставками как базовых так и сложных 
+                  архитектурных сырьевых стекол формата 
+                  Jumbo и DLF.
+                  <p>
+                    Также мы предлагаем стекло для 
+                    картинных рамок и прочие виды листового
+                    стекла по всей Европе уже много лет.
+                  </p>
+                </div>  
+              </div>
+            
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/window.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Строительное листовое стекло</h3>
+                <a class="our-product-item-link product-link" id="product1" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/table.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Стекло для картинных рамок</h3>
+                <a class="our-product-item-link product-link" id="product2" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            <div class="our-products-item">
+              <div class="our-products-item-photo">
+                <img class="our-products-item-photo-img" src="/src/img/our-products/fireplace.png" alt="">
+              </div>
+              <div class="our-product-item-description">
+                <h3 class="our-product-item-title">Стеклокерамика для каминов</h3>
+                <a class="our-product-item-link product-link" id="product3" href="">Узнать больше</a>
+                    <i class="triangle"></i>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="our-team">
+      <div class="container">
+        <div class="team-wrapper">
+          <div class="team-title">
+            <h2 class="team-title-text">Команда</h2>
+            <span class="team-descriptipn">
+              Наша команда состоит из компетентных сотрудников, 
+              готовых быстро найти нужное и гибкое решение
+            </span>
+          </div>
+          <div class="layout-4-columns">
+            <div class="worker">
+              <div class="worker-photo">
+                <img class="worker-photo-img" src="./src/img/team/worker.png" alt="worker">
+              </div>
+              <p class="worker-position">Company Owner / Director </p>
+              <h4 class="worker-name">Vjatseslav Zolotarjov</h4>
+              <a href="tel:+3725168232" class="worker-contact">Tel: +372 5168 232</a>
+              <a href="mailto:vz@andres.ee" class="worker-contact">vz@andres.ee</a>
+            </div>
+            <div class="worker">
+              <div class="worker-photo">
+                <img class="worker-photo-img" src="./src/img/team/worker.png" alt="worker">
+              </div>
+              <p class="worker-position">Project Manager</p>
+              <h4 class="worker-name">Semjon Gurei</h4>
+              <a href="tel:+37255688900" class="worker-contact">Tel: +372 5568 8900</a>
+              <a href="tel:+3726644560" class="worker-contact">Tel: +372 66 44 560</a>
+              <a href="skype:semjon.gurei" class="worker-contact">skype: semjon.gurei</a>
+              <a href="mailto:semjon.gurei@andres.ee" class="worker-contact">semjon.gurei@andres.ee</a>
+            </div>
+            <div class="worker">
+              <div class="worker-photo">
+                <img class="worker-photo-img" src="./src/img/team/worker.png" alt="worker">
+              </div>
+              <p class="worker-position">Export Manager</p>
+              <h4 class="worker-name">Dalia Narbutiene</h4>
+              <a href="skype:andres.support" class="worker-contact">skype: andres.support</a>
+              <a href="mailto:dn@andres.ee" class="worker-contact">dn@andres.ee</a>
+              <a href="tel:+372 506 0071" class="worker-contact">Tel: +372 506 0071</a>
+            </div>
+            <div class="worker">
+              <div class="worker-photo">
+                <img class="worker-photo-img" src="./src/img/team/worker.png" alt="worker">
+              </div>
+              <p class="worker-position">Sales Manager</p>
+              <h4 class="worker-name">Annika Laas</h4>
+              <a href="tel:+37253067099" class="worker-contact">Tel: +372 5306 7099</a>
+              <a href="skype: annika55" class="worker-contact">Skype: annika55</a>
+              <a href="mailto:annika.laas@andres.ee" class="worker-contact">annika.laas@andres.ee</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location">
+      <div class="location-wrapper">
+        <div class="location-img">
+          <div class="location-img-wrapper">
+            <img class="location-img-pic" src="/src/img/location/photo.png" alt="">
+          </div>
+        </div>
+        <div class="map-wrapper">
+          <!-- <div id="map"></div> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.14823093478594!2d24.78044602925364!3d59.43986359885612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDI2JzIzLjUiTiAyNMKwNDYnNTEuNiJF!5e0!3m2!1sru!2sby!4v1595422110599!5m2!1sru!2sby" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts-wrapper">
+          <div class="contacts-text">
+            <h2 class="contacts-title white">Контакты</h2>
+            <p class="white">
+              A.H. Tammsaare 47, 11316 Tallinn, Estonia
+              <a class="white" href="mailto:glassimpex(a)andres.ee">Email: glassimpex(a)andres.ee</a><br>
+              <a class="white" href="tel:+37260644560">Tel:  +372 606 44 560</a>
+            </p>
+          </div>
+          <form method="POST" class="contacts-form">
+            <input type="text" class="field" name="name" placeholder="Ваше имя" required>
+            <input type="email" class="field" name="email" placeholder="Email" required>
+            <input type="text" class="field" name="theme" placeholder="Тема" >
+            <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
+            <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-menu">
+          <a href="/" class="logo logo-footer"></a>
+          <nav class="footer-navigation">
+            <div class="footer-nav-list">
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#about-us">О нас</a></div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-products">Продукция</a></div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-team">Команда</a></div>
+              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link links-menu">Ссылки</p></div>
+              <div class="footer-sec-nav-list">
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">ISO certificates</a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href=""></a>Conformity certificates</div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">СЕ Marking </a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">Pilkington Spectrum 7.1.0</a></div>
+                <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">Awards</a></div>
+              </div>
+              <div class="footer-nav-item"><a class="footer-nav-item-link" href="#contacts">Контакты</a></div>
+            </div>
+          </nav>
+        </div>
+        <div class="text">
+          © 2019 Glassimpex. All rights reserved
+        </div>
+        <div class="developer">
+          Made by ester.co
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script type="module" src="./src/scripts/script.js"></script> -->
+  <script src="/js/organisms/header/header.js"></script>
+  <script src="/js/organisms/footer/footer.js"></script>
+  <script src="/js/organisms/modal-our-products/modal-our-products.js"></script>
+  <script src="/js/organisms/modal-send-request/modal-send-request.js"></script>
+</body>
+
+
+</html>

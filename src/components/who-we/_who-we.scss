@@ -1,0 +1,210 @@
+.main-section {
+  background-color: #0b3142;
+}
+
+.who-we-wrapper {
+  padding: 70px 98px 0;
+  color: #ffffff;
+}
+
+.who-we {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.who-we-definition > h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 52px;
+  max-width: 352px;
+  margin-top: 104px;
+  margin-bottom: 17px;
+}
+
+.who-we-definition-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 376px;
+  margin-bottom: 34px;
+  // padding-right: 20px;
+  margin-right: 30px;
+}
+
+.who-we-connect-btn {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  background: #00a8ff;
+  border-radius: 3px;
+  padding: 10px 19px 10px 20px;
+  // display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.who-we-connect-btn:hover {
+  background-color: #0094e0;
+}
+
+// .who-we-defenition-img {
+//   max-width: 671px;
+//   max-height: 461px;
+// }
+.who-we-defenition-img {
+  height: 0;
+  overflow: hidden;
+  padding-top: calc(275 / 700 * 100%);
+  position: relative;
+  width: 57.5%;
+}
+
+.who-we-defenotion-picture {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.who-we-list-links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 39px;
+}
+
+.who-we-link {
+  display: flex;
+  align-items: center;
+}
+
+.who-we-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.who-we-text-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-decoration-line: underline;
+  margin-left: 10.2px;
+  cursor: pointer;
+}
+
+.btn-in-header {
+  display: none;
+}
+
+@media (min-width: 377px) and (max-width: 992px) {
+  .main-section {
+    background-image: url("/src/img/main-section/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-in-header {
+    display: inline-block;
+  }
+
+  .who-we-wrapper {
+    padding: 107px 10% 10px 10%;
+    background-color: rgba(4, 28, 78, 0.6);
+  }
+
+  .who-we {
+    margin-bottom: 47px;
+  }
+
+  .who-we-definition > h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 275px;
+  }
+
+  .who-we-definition-text {
+    max-width: 100%;
+  }
+
+  .who-we-defenition-img {
+    display: none;
+  }
+
+  .who-we-connect-btn {
+    padding: 12px 66px 13px 71px;
+    // margin-bottom: 0px;
+  }
+
+  .who-we-list-links {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .who-we-link {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-section {
+    background-image: url("/src/img/main-section/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-in-header {
+    display: inline-block;
+  }
+
+  .who-we-wrapper {
+    padding-left: 20px;
+    padding-top: 107px;
+    padding-bottom: 17px;
+    padding-right: 20px;
+    background-color: rgba(4, 28, 78, 0.6);
+  }
+
+  .who-we {
+    margin-bottom: 47px;
+  }
+
+  .who-we-definition > h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 275px;
+  }
+
+  .who-we-defenition-img {
+    display: none;
+  }
+
+  .who-we-connect-btn {
+    padding: 12px 66px 13px 71px;
+    // margin-bottom: 0px;
+  }
+
+  .who-we-list-links {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .who-we-link {
+    margin-bottom: 32px;
+  }
+}

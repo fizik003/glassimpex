@@ -1,0 +1,75 @@
+.location-wrapper {
+  display: flex;
+}
+
+.location-img {
+  height: 350px;
+  flex-basis: 40.5%;
+}
+
+.location-img-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-top: 350px;
+  position: relative;
+}
+
+.location-img-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-wrapper {
+  flex-basis: 59.5%;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 350px;
+}
+
+@media (min-width: 377px) and (max-width: 992px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+
+  .location-img-wrapper {
+    height: 0;
+    overflow: hidden;
+    padding-top: 210px;
+    position: relative;
+  }
+  .location-img-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 376px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+
+  .location-img-wrapper {
+    height: 0;
+    overflow: hidden;
+    padding-top: 215px;
+    position: relative;
+  }
+  .location-img-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
