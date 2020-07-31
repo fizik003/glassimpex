@@ -239,7 +239,7 @@
     // flex-direction: column-reverse;
     // justify-content: center;
     align-items: center;
-    padding: 27px 19px 27px 20px;
+    // padding: 27px 19px 27px 20px;
   }
 
   .btn-exit {
@@ -247,7 +247,7 @@
     position: absolute;
     z-index: 201;
     right: 5.6%;
-    top: 2.1%;
+    top: 1.6%;
   }
 
   .btn-exit span::before,
@@ -262,6 +262,28 @@
 
   .slider {
     margin-top: 0;
+  }
+
+  .gallery-thumbs {
+    // height: 20%;
+    box-sizing: border-box;
+    padding: 16px 0 0;
+  }
+
+  .swiper-big {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    position: relative;
+    padding-top: calc(0.58 * 100%);
+  }
+
+  .swiper-small {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    position: relative;
+    padding-top: calc(0.18 * 100%);
   }
 
   .modal-text {
