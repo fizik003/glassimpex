@@ -9,7 +9,7 @@ class ModalProducts {
   initSlider(product) {
     document.body.classList.add("overflow-hidden");
     const galleryThumbs = new Swiper(`.gallery-thumbs-${product}`, {
-      spaceBetween: 10,
+      spaceBetween: 30,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesVisibility: true,
@@ -26,6 +26,9 @@ class ModalProducts {
         swiper: galleryThumbs,
       },
     });
+
+    galleryThumbs.update();
+    galleryTop.update();
   }
 
   exitFromModal() {
