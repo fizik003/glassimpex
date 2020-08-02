@@ -127,10 +127,12 @@
 
 .swiper-button-next {
   right: -6px;
+  top: 58%;
 }
 
 .swiper-button-prev {
-  left: 2px;
+  left: -5px;
+  top: 58%;
 }
 
 .swiper-button-next::after,
@@ -218,6 +220,7 @@
 
   .modal-text {
     margin-bottom: 57px;
+    max-width: 620px;
   }
 
   .slider {
@@ -231,15 +234,10 @@
   }
 
   .modal-wrapper {
-    // min-height: 100%;
     padding: 27px 19px 0 20px;
   }
   .modal-container {
-    // display: flex;
-    // flex-direction: column-reverse;
-    // justify-content: center;
     align-items: center;
-    // padding: 27px 19px 27px 20px;
   }
 
   .btn-exit {
@@ -265,7 +263,6 @@
   }
 
   .gallery-thumbs {
-    // height: 20%;
     box-sizing: border-box;
     padding: 16px 0 0;
   }
