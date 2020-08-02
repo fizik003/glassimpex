@@ -127,7 +127,15 @@
 
 .swiper-button-next {
   right: -6px;
-  top: 58%;
+  top: 29%;
+  width: 15%;
+  height: -webkit-fill-available;
+  // top: 32%;
+  background: linear-gradient(
+    270deg,
+    #0b3142 30.04%,
+    rgba(11, 49, 66, 0.0001) 95.72%
+  );
 }
 
 .swiper-button-prev {
@@ -138,6 +146,12 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 22px;
+}
+
+.swiper-button-next::after {
+  right: 9px;
+  position: absolute;
+  top: 33%;
 }
 
 // ----------------
@@ -281,6 +295,10 @@
     width: 100%;
     position: relative;
     padding-top: calc(0.18 * 100%);
+  }
+
+  .swiper-button-next {
+    top: 29%;
   }
 
   .modal-text {
