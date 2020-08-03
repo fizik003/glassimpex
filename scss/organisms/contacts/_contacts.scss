@@ -10,6 +10,13 @@
   display: flex;
 }
 
+.contacts-content {
+  display: flex;
+  flex-direction: row;
+  // max-width: 464px;
+  width: 100%;
+}
+
 .contacts-title {
   margin-bottom: 15px;
 }
@@ -86,42 +93,37 @@
   background-color: #0094e0;
 }
 
-@media (min-width: 377px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .contacts-wrapper {
-    padding: 34px 10% 41px 10%;
+    padding: 35px 20px 41px 21px;
     flex-direction: column;
     align-items: center;
   }
 
-  .contacts-text {
-    margin: 0 0 35px 0;
-  }
-
-  .field::placeholder {
-    font-size: 14px;
-    line-height: 34px;
-    /* identical to box height, or 243% */
-    color: #e2eff1;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-  }
-
-  .contacts-send-btn {
-    width: 100%;
-    padding: 12px 37px;
-  }
-}
-
-@media (max-width: 375px) {
-  .contacts-wrapper {
-    padding: 34px 20px 41px 20px;
+  .contacts-content {
+    display: flex;
     flex-direction: column;
+    max-width: 464px;
+    width: 100%;
   }
 
   .contacts-text {
-    margin: 0 0 35px 0;
+    margin: unset;
+    margin-bottom: 35px;
   }
 
+  .field {
+    background-color: #123849;
+    border: none;
+    margin-bottom: 11px;
+    border-radius: 2px;
+    outline: none;
+    padding: 19px 19px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
   .field::placeholder {
     font-size: 12px;
     line-height: 14px;
@@ -134,5 +136,31 @@
   .contacts-send-btn {
     width: 100%;
     padding: 12px 37px;
+    letter-spacing: 1px;
   }
 }
+
+// @media (max-width: 375px) {
+//   .contacts-wrapper {
+//     padding: 31px 20px 41px 20px;
+//     flex-direction: column;
+//   }
+
+//   .contacts-text {
+//     margin: 0 0 35px 0;
+//   }
+
+//   .field::placeholder {
+//     font-size: 12px;
+//     line-height: 14px;
+//     /* identical to box height, or 243% */
+//     color: #e2eff1;
+//     mix-blend-mode: normal;
+//     opacity: 0.5;
+//   }
+
+//   .contacts-send-btn {
+//     width: 100%;
+//     padding: 12px 37px;
+//   }
+// }

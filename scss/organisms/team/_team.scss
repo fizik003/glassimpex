@@ -118,22 +118,23 @@
     height: 0;
     overflow: hidden;
     padding-top: calc(400 / 400 * 100%);
+    margin-bottom: 19px;
   }
 }
 
-@media (min-width: 377px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .team-wrapper {
-    padding: 34px 10% 0 10%;
+    padding: 37px 20px 0 20px;
   }
 
   .team-title {
     justify-content: start;
     align-items: flex-start;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .team-title-text {
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
   .team-descriptipn {
@@ -144,6 +145,7 @@
   .layout-4-columns {
     flex-wrap: wrap;
     margin-right: -10px;
+    padding-bottom: 4px;
   }
 
   .worker {
@@ -152,6 +154,14 @@
     margin-bottom: 30px;
     margin-right: unset;
     min-width: 250px;
+  }
+
+  .worker-position {
+    margin-bottom: 9px;
+  }
+
+  .worker-photo {
+    margin-bottom: 16px;
   }
 
   .worker:nth-child(odd) {
@@ -166,39 +176,35 @@
   // }
 }
 
-@media (max-width: 376px) {
-  .team-wrapper {
-    padding: 34px 20px 0 20px;
-  }
+// @media (max-width: 376px) {
+//   .team-wrapper {
+//     padding: 37px 20px 0 20px;
+//   }
 
-  .team-title {
-    justify-content: start;
-    align-items: flex-start;
-    margin-bottom: 26px;
-  }
+//   .team-title {
+//     justify-content: start;
+//     align-items: flex-start;
+//     margin-bottom: 26px;
+//   }
 
-  .team-title-text {
-    margin-bottom: 11px;
-  }
+//   .team-descriptipn {
+//     width: 100%;
+//     text-align: start;
+//   }
 
-  .team-descriptipn {
-    width: 100%;
-    text-align: start;
-  }
+//   .layout-4-columns {
+//     flex-direction: column;
+//     padding-bottom: 0;
+//   }
 
-  .layout-4-columns {
-    flex-direction: column;
-    padding-bottom: 0;
-  }
+//   .worker {
+//     margin-bottom: 35px;
+//     min-width: 232px;
+//   }
 
-  .worker {
-    margin-bottom: 35px;
-    min-width: 232px;
-  }
-
-  .worker-photo {
-    // max-width: 250px;
-    // max-height: 239px;
-    padding-top: calc(250 / 239 * 100%);
-  }
-}
+//   .worker-photo {
+//     // max-width: 250px;
+//     // max-height: 239px;
+//     padding-top: calc(250 / 239 * 100%);
+//   }
+// }

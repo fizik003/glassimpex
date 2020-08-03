@@ -388,66 +388,6 @@
     <section class="our-products" id="our-products">
       <div class="container">
         <div class="our-products-wrapper">
-          <!-- <div class="layout-2-columns">
-            <div class="row content">
-              <div class="item-description">
-                <h2 class="white">Наши продукты</h2>
-                <div class="item-description-text">
-                  Наша фирма представляет интересы известного 
-                  во всём мире стекольного бренда PILKINGTON 
-                  GLASS в странах Балтии и занимается 
-                  поставками как базовых так и сложных 
-                  архитектурных сырьевых стекол формата 
-                  Jumbo и DLF.
-                  <p>
-                    Также мы предлагаем стекло для 
-                    картинных рамок и прочие виды листового
-                    стекла по всей Европе уже много лет.
-                  </p>
-                </div>  
-              </div>
-              <div class="our-product-item margin-right">
-                <div class="our-product-item-wrapper">
-                  <img class="our-product-item-img" src="./src/img/our-products/window.png" alt="table">
-                  <div class="our-product-item-text">
-                    <h3 class="our-product-item-title">
-                      Строительное листовое стекло
-                    </h3>
-                    <a class="our-product-item-link" id="product1" href="">Узнать больше</a>
-                    <span class="triangle"></span>
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-           
-           
-            <div class="row margin-top-small">
-              <div class="our-product-item-wrapper margin-right">
-                <img class="our-product-item-img" src="./src/img/our-products/table.png" alt="table">
-                <div class="our-product-item-text">
-                  <h3 class="our-product-item-title">
-                    Стекло для картинных рамок
-                  </h3>
-                  <a class="our-product-item-link" id="product2" href="">Узнать больше</a>
-                  <div class="triangle"></div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="row flex-end margin-top-big">
-              <div class="our-product-item-wrapper ">
-                <img class="our-product-item-img" src="./src/img/our-products/fireplace.png" alt="table">
-                <div class="our-product-item-text">
-                  <h3 class="our-product-item-title">
-                    Стеклокерамика для каминов
-                  </h3>
-                  <a class="our-product-item-link" id="product3" href="">Узнать больше</a>
-                  <span class="triangle"></span>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="our-products-layout-2-columns">
             <div class="our-products-item">
               <div class="item-description">
@@ -574,21 +514,23 @@
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts-wrapper">
-          <div class="contacts-text">
-            <h2 class="contacts-title white">Контакты</h2>
-            <p class="white">
-              A.H. Tammsaare 47, 11316 Tallinn, Estonia
-              <a class="white" href="mailto:glassimpex(a)andres.ee">Email: glassimpex(a)andres.ee</a><br>
-              <a class="white" href="tel:+37260644560">Tel:  +372 606 44 560</a>
-            </p>
+          <div class="contacts-content">
+            <div class="contacts-text">
+              <h2 class="contacts-title white">Контакты</h2>
+              <p class="white">
+                A.H. Tammsaare 47, 11316 Tallinn, Estonia
+                <a class="white" href="mailto:glassimpex(a)andres.ee">Email: glassimpex(a)andres.ee</a><br>
+                <a class="white" href="tel:+37260644560">Tel:  +372 606 44 560</a>
+              </p>
+            </div>
+            <form method="POST" class="contacts-form">
+              <input type="text" class="field" name="name" placeholder="Ваше имя" required>
+              <input type="email" class="field" name="email" placeholder="Email" required>
+              <input type="text" class="field" name="theme" placeholder="Тема" >
+              <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
+              <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
+            </form>
           </div>
-          <form method="POST" class="contacts-form">
-            <input type="text" class="field" name="name" placeholder="Ваше имя" required>
-            <input type="email" class="field" name="email" placeholder="Email" required>
-            <input type="text" class="field" name="theme" placeholder="Тема" >
-            <textarea name="message" class="textarea-message field" cols="30" rows="5" placeholder="Сообщение"></textarea>
-            <div class="wrapper-btn"><button class="contacts-send-btn" type="submit" >Отправить</button></div>
-          </form>
         </div>
       </div>
     </section>
@@ -603,7 +545,7 @@
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#about-us">О нас</a></div>
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-products">Продукция</a></div>
               <div class="footer-nav-item"><a class="footer-nav-item-link" href="#our-team">Команда</a></div>
-              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link links-menu">Ссылки</p></div>
+              <div class="footer-nav-item open-menu"><p class="footer-nav-item-link links-menu">Ссылки</p><i class="footer-links-ico"></i></div>
               <div class="footer-sec-nav-list">
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href="">ISO certificates</a></div>
                 <div class="footer-sec-nav-item"><a class="foot-sec-nav-item-link" href=""></a>Conformity certificates</div>
