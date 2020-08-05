@@ -13,8 +13,8 @@
 }
 
 .btn-exit {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   position: absolute;
   z-index: 8;
   right: 44px;
@@ -28,7 +28,7 @@
   content: "";
   background-color: #718791;
   height: 2px;
-  width: 32px;
+  width: 100%;
   position: absolute;
   top: 50%;
 }
@@ -77,6 +77,7 @@
 .swiper-slide {
   background-size: cover;
   background-position: center;
+  border-radius: 6px;
 }
 
 .gallery-top {
@@ -94,6 +95,7 @@
   width: 25%;
   height: 100%;
   opacity: 0.4;
+  border-radius: 6px;
 }
 
 .gallery-thumbs .swiper-slide-thumb-active {
@@ -124,13 +126,23 @@
   top: 0;
   left: 0;
 }
+.swiper-button-prev {
+  left: -3%;
+  top: 22%;
+  width: 19%;
+  height: -webkit-fill-available;
+  background: linear-gradient(
+    90deg,
+    #0b3142 30.04%,
+    rgba(11, 49, 66, 0.0001) 95.72%
+  );
+}
 
 .swiper-button-next {
   right: -6px;
-  top: 29%;
+  top: 22%;
   width: 15%;
   height: -webkit-fill-available;
-  // top: 32%;
   background: linear-gradient(
     270deg,
     #0b3142 30.04%,
@@ -138,26 +150,47 @@
   );
 }
 
-.swiper-button-prev {
-  left: -5px;
-  top: 58%;
-}
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 22px;
+  top: 40%;
+  position: absolute;
 }
 
 .swiper-button-next::after {
   right: 9px;
-  position: absolute;
-  top: 33%;
+}
+.swiper-button-prev::after {
+  left: 21%;
+}
+
+.swiper-button-disabled::after {
+  visibility: hidden;
 }
 
 // ----------------
 
 .modal-text {
   max-width: 444px;
+}
+
+.modal-text-product2 .modal-text-title {
+  padding-top: 68px;
+}
+
+.modal-text-product3 .modal-text-title {
+  padding-top: 94px;
+}
+.modal-text-product1 .modal-text-description,
+.modal-text-product2 .modal-text-description {
+  padding-right: 10px;
+}
+.modal-text-product3 .modal-text-description {
+  padding-right: 20px;
+}
+
+.modal-text-product2 .more-details-list {
+  padding-left: 10px;
 }
 
 .modal-text-title {
@@ -168,11 +201,11 @@
 .modal-text-description {
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 64px;
+  // margin-bottom: 64px;
 }
 
 .more-details-prod {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -200,6 +233,11 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  margin-top: 44px;
+}
+
+.btn-send-request-product2 {
+  margin-left: 9px;
 }
 
 .link-send-request {
@@ -232,8 +270,16 @@
     padding-top: unset;
   }
 
-  .modal-text {
-    margin-bottom: 57px;
+  .modal-text-product1 {
+    margin-bottom: 55px;
+    max-width: 620px;
+  }
+  .modal-text-product2 {
+    margin-bottom: 24px;
+    max-width: 620px;
+  }
+  .modal-text-product3 {
+    margin-bottom: 100px;
     max-width: 620px;
   }
 
@@ -258,8 +304,8 @@
     display: block;
     position: absolute;
     z-index: 201;
-    right: 5.6%;
-    top: 1.6%;
+    right: 18px;
+    top: 16px;
   }
 
   .btn-exit span::before,
@@ -267,7 +313,7 @@
     position: absolute;
     top: 50%;
     margin-top: -1;
-    width: 25px;
+    width: 100%;
     height: 3px;
     background-color: #ffffff;
   }
@@ -278,7 +324,7 @@
 
   .gallery-thumbs {
     box-sizing: border-box;
-    padding: 16px 0 0;
+    padding: 12px 0 0;
   }
 
   .swiper-big {
@@ -286,7 +332,7 @@
     height: 0;
     width: 100%;
     position: relative;
-    padding-top: calc(0.58 * 100%);
+    padding-top: calc(0.596 * 100%);
   }
 
   .swiper-small {
@@ -297,13 +343,24 @@
     padding-top: calc(0.18 * 100%);
   }
 
+  .swiper-button-prev {
+    left: -3.3%;
+  }
+
   .swiper-button-next {
-    top: 29%;
+    top: 24%;
   }
 
   .modal-text {
     // margin-bottom: 57px;
     max-width: 620px;
+  }
+
+  .modal-text-product2 .modal-text-title {
+    padding-top: unset;
+  }
+  .modal-text-product3 .modal-text-title {
+    padding-top: unset;
   }
 
   .modal-text-title {
@@ -315,11 +372,25 @@
   .modal-text-description {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 18px;
-    padding-right: 11px;
+    margin-bottom: 20px;
+    padding-right: 3px;
   }
 
-  .btn-sent-request {
+  .modal-text-product3 .modal-text-description {
+    padding-right: 3px;
+  }
+
+  .more-details-prod {
+    margin-bottom: 13px;
+    position: relative;
+  }
+
+  .btn-send-request {
     padding: 11px 18px 13px 19px;
+    margin-top: unset;
+  }
+
+  .btn-send-request-product2 {
+    margin-left: 14px;
   }
 }

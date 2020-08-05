@@ -26,27 +26,22 @@
   font-size: 18px;
 }
 
-.modal-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
-  position: absolute;
-  top: 22px;
-  width: 96%;
-}
-
 .btn-request-exit {
-  left: -21px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  right: 18px;
+  top: 28px;
+  width: 23px;
+  height: 23px;
 }
 
 .btn-request-exit span::before,
 .btn-request-exit span::after {
   position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  width: 23px;
+  // top: 50%;
+  // margin-top: -1px;
+  // width: 23px;
+  width: 100%;
   height: 3px;
   background-color: #fff;
   content: "";
@@ -63,8 +58,12 @@
 }
 
 .btn-request-back {
-  position: relative;
   cursor: pointer;
+  position: absolute;
+  left: 21px;
+  top: 20px;
+  height: 20px;
+  width: 11.2px;
 }
 
 .btn-request-back span::before,
@@ -119,7 +118,7 @@
   }
 
   .send-request-wrapper {
-    // min-height: unset;
+    padding-top: 74px;
   }
 }
 

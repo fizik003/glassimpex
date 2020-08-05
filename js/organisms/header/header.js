@@ -5,6 +5,7 @@ class Header {
     this.btnContact = document.querySelector(".btn-in-header");
     this.btnLinks = document.querySelector(".nav-item-link.open");
     this.anchors = document.querySelectorAll('a[href*="#"]');
+    this.hederLinks = document.querySelector(".heder-links");
     this.init();
   }
 
@@ -19,6 +20,13 @@ class Header {
       this.burgerBtn.classList.toggle("burger-btn-active");
       this.navigationBlock.classList.toggle("navigation-open");
       document.body.classList.toggle("overflow-hidden");
+    });
+    this.hederLinks.addEventListener("click", (e) => {
+      console.log(12);
+      if (window.innerWidth < 993) {
+        e.preventDefault();
+        console.log("ggg");
+      }
     });
   }
 
