@@ -3,17 +3,29 @@
 }
 
 .location-img {
-  height: 350px;
+  // height: 350px;
   flex-basis: 40.5%;
 }
 
 .location-img-wrapper {
-  height: 0;
+  display: block;
+  // max-height: 400px;
+  min-height: 250px;
+  height: 100%;
+  max-width: 100%;
   overflow: hidden;
-  padding-top: 350px;
+  padding-top: unset;
   position: relative;
 }
 
+.location-img-wrapper::before {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  // padding-top: 215px;
+  padding-top: calc(350 / 777 * 100%);
+}
 .location-img-pic {
   position: absolute;
   top: 0;
@@ -24,15 +36,28 @@
 }
 
 .map-wrapper {
+  // max-height: 400px;
+  min-height: 250px;
+  height: 100%;
   flex-basis: 59.5%;
-  width: 100%;
-  height: 347px;
   overflow: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
-#map {
-  width: 100%;
+.map-wrapper::before {
+  display: block;
+  content: "";
+  height: 0;
+  padding-top: calc(350 / 1142 * 100%);
+}
+
+.location__map {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -46,11 +71,12 @@
 
   .location-img-wrapper {
     display: block;
-    max-height: 300px;
+    // max-height: 300px;
     height: 100%;
     max-width: 100%;
     overflow: hidden;
     padding-top: unset;
+    position: relative;
   }
 
   .location-img-wrapper::before {
@@ -58,9 +84,7 @@
     display: block;
     height: 0;
     overflow: hidden;
-    // padding-top: 215px;
     padding-top: calc(215 / 375 * 100%);
-    position: relative;
   }
   .location-img-pic {
     position: absolute;
@@ -68,5 +92,79 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .map-wrapper {
+    // max-height: 450px;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .map-wrapper::before {
+    display: block;
+    content: "";
+    height: 0;
+    padding-top: calc(350 / 375 * 100%);
+  }
+
+  .location__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 992px) {
+  .location-img-wrapper {
+    display: block;
+    // max-height: 300px;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: unset;
+    position: relative;
+  }
+
+  .location-img-wrapper::before {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: calc(215 / 800 * 100%);
+  }
+
+  .location-img-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-wrapper {
+    // max-height: 450px;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .map-wrapper::before {
+    display: block;
+    content: "";
+    height: 0;
+    padding-top: calc(350 / 800 * 100%);
+  }
+
+  .location__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
 }

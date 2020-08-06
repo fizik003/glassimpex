@@ -21,11 +21,10 @@ class Header {
       this.navigationBlock.classList.toggle("navigation-open");
       document.body.classList.toggle("overflow-hidden");
     });
-    this.hederLinks.addEventListener("click", (e) => {
-      console.log(12);
+    this.hederLinks.addEventListener("touchstart", (e) => {
       if (window.innerWidth < 993) {
         e.preventDefault();
-        console.log("ggg");
+        e.target.classList.toggle("heder-links-active");
       }
     });
   }
