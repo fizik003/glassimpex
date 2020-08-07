@@ -67,8 +67,10 @@ header {
   color: #59586b;
 }
 
-.nav-item:hover > .sec-nav-list {
-  display: block;
+@media (min-width: 992px) {
+  .nav-item:hover > .sec-nav-list {
+    display: block;
+  }
 }
 
 .choice-lang {
@@ -154,7 +156,7 @@ header {
     margin-left: 8px;
     margin-bottom: 1px;
     // position: absolute;
-    // transition: all 0.3s;
+    transition: all 0.3s;
     // top: 50%;
     // transform: translateX(10px);
   }

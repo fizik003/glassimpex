@@ -3,13 +3,11 @@
 }
 
 .location-img {
-  // height: 350px;
   flex-basis: 40.5%;
 }
 
 .location-img-wrapper {
   display: block;
-  // max-height: 400px;
   min-height: 250px;
   height: 100%;
   max-width: 100%;
@@ -23,7 +21,6 @@
   display: block;
   height: 0;
   overflow: hidden;
-  // padding-top: 215px;
   padding-top: calc(350 / 777 * 100%);
 }
 .location-img-pic {
@@ -36,7 +33,6 @@
 }
 
 .map-wrapper {
-  // max-height: 400px;
   min-height: 250px;
   height: 100%;
   flex-basis: 59.5%;
@@ -71,7 +67,6 @@
 
   .location-img-wrapper {
     display: block;
-    // max-height: 300px;
     height: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -95,7 +90,6 @@
   }
 
   .map-wrapper {
-    // max-height: 450px;
     height: 100%;
     overflow: hidden;
     max-width: 100%;
@@ -121,7 +115,6 @@
 @media (min-width: 580px) and (max-width: 992px) {
   .location-img-wrapper {
     display: block;
-    // max-height: 300px;
     height: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -146,7 +139,6 @@
   }
 
   .map-wrapper {
-    // max-height: 450px;
     height: 100%;
     overflow: hidden;
     max-width: 100%;
